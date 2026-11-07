@@ -760,3 +760,200 @@ body{background:var(--bg);color:var(--ink)}
 .platform-orbit-caption i{color:#ff3d8b;font-style:normal}
 @media(max-width:900px){.platform-ecosystem{grid-template-columns:1fr}.platform-orbit-beam{width:130px}.platform-orbit-item{left:130px}.platform-name{display:none}.platform-orbit-chip{padding:6px}.platform-orbit-core{width:100px;height:100px;margin:-50px 0 0 -50px}}
 @media(prefers-reduced-motion:reduce){.platform-orbit-track,.platform-orbit-item>button,.platform-mark,.core-pulse,.core-logo,.ring-inner,.ring-glow,.creator-art-logo{animation:none!important}}
+
+
+/* ===== APEX contrast correction — consistent light surfaces, readable type ===== */
+:root{
+  --apex-light-bg:#f8f7f3;
+  --apex-light-panel:#ffffff;
+  --apex-light-ink:#263a35;
+  --apex-light-body:#53655d;
+  --apex-light-muted:#687a70;
+  --apex-light-line:#dfe7e1;
+  --apex-green:#176b4e;
+  --apex-coral:#b95f4b;
+}
+
+/* Reset the accidental global neon-dark canvas. Keep saturated brand colour in accents only. */
+body{background:var(--apex-light-bg)!important;color:var(--apex-light-ink)!important}
+.apex-site,.inner-page,.legal-page{
+  background:var(--apex-light-bg)!important;
+  color:var(--apex-light-ink)!important;
+}
+.apex-site h1,.apex-site h2,.apex-site h3,
+.inner-page h1,.inner-page h2,.inner-page h3,
+.legal-page h1,.legal-page h2,.legal-page h3{
+  color:var(--apex-light-ink)!important;
+}
+.apex-site p,.inner-page p,.legal-page p{
+  color:var(--apex-light-body)!important;
+}
+.apex-site em,.inner-page em,.legal-page em{
+  background:none!important;
+  -webkit-text-fill-color:var(--apex-coral)!important;
+  color:var(--apex-coral)!important;
+}
+.apex-site a:not(.apex-button):not(.header-cta),
+.inner-page a:not(.button):not(.header-cta),
+.legal-page a{color:var(--apex-green)}
+.apex-site a:focus-visible,.inner-page a:focus-visible,.legal-page a:focus-visible,
+.apex-site button:focus-visible,.inner-page button:focus-visible{
+  outline:3px solid #176b4e!important;outline-offset:4px!important;
+}
+
+/* Homepage: calm alternating surfaces; reserve dark treatment for the final CTA/footer. */
+.apex-site .apex-topline{background:#263b35!important;color:#f7f5ef!important}
+.apex-site .site-header{
+  background:rgba(250,250,246,.97)!important;
+  border-bottom:1px solid var(--apex-light-line)!important;
+}
+.apex-site .wordmark-main{color:#263a35!important}
+.apex-site .wordmark-sub{color:#586b61!important}
+.apex-site .desktop-nav a{color:#40564c!important}
+.apex-site .header-cta{
+  color:#fff!important;background:#176b4e!important;border:1px solid #176b4e!important;
+}
+.apex-site .header-cta span{color:#fff!important}
+.apex-site .mobile-menu-toggle{color:#263a35!important}
+.apex-site .apex-hero{
+  background:radial-gradient(ellipse at 78% 42%,#f3e3dc 0,transparent 43%),linear-gradient(115deg,#fbfaf6,#f0f5ef)!important;
+}
+.apex-site .apex-hero h1{color:#263a35!important}
+.apex-site .apex-hero h1 em{color:#b95f4b!important}
+.apex-site .apex-hero-copy>p{color:#53655d!important}
+.apex-site .apex-eyebrow,.apex-site .apex-section-kicker{color:#53685e!important}
+.apex-site .apex-hero-note{color:#52665c!important}
+.apex-site .apex-text-link{color:#40564c!important}
+.apex-site .apex-proofline{
+  background:#263b35!important;color:#f7f5ef!important;
+  border-color:#263b35!important;
+}
+.apex-site .apex-proofline span{color:#f7f5ef!important}
+.apex-site .apex-proofline i{color:#f2a28c!important}
+
+/* Light editorial sections: headings and body copy always use dark ink. */
+.apex-site .apex-intro{background:#fbfaf6!important}
+.apex-site .apex-services{background:#eef3ee!important}
+.apex-site .apex-system{background:#fbfaf6!important}
+.apex-site .apex-principles{background:#f3f0e9!important}
+.apex-site .apex-faq{background:#fff!important}
+.apex-site .apex-intro h2,.apex-site .apex-services h2,
+.apex-site .apex-system h2,.apex-site .apex-principles h2,
+.apex-site .apex-faq h2{color:#263a35!important}
+.apex-site .apex-intro p,.apex-site .apex-services p,
+.apex-site .apex-system p,.apex-site .apex-principles p,
+.apex-site .apex-faq p{color:#53655d!important}
+.apex-site .apex-service-card,.apex-site .apex-principle-grid article,
+.apex-site .apex-process-card,.apex-site .apex-faq-list details{
+  background:#fff!important;border-color:#dfe7e1!important;
+}
+.apex-site .apex-service-card h3,.apex-site .apex-principle-grid h3,
+.apex-site .apex-process-card b,.apex-site .apex-faq-list summary{
+  color:#263a35!important;
+}
+.apex-site .apex-service-card p,.apex-site .apex-principle-grid p,
+.apex-site .apex-process-card small,.apex-site .apex-faq-list details p{
+  color:#53655d!important;
+}
+.apex-site .apex-service-card li,.apex-site .apex-principle-grid article>span,
+.apex-site .apex-process-card>span{color:#53685e!important}
+.apex-site .apex-faq-list summary span{color:#176b4e!important}
+.apex-site .apex-system .apex-process-visual{
+  background:#edf3ee!important;border-color:#d6e2d9!important;
+}
+.apex-site .apex-system .apex-visual-top,
+.apex-site .apex-system .apex-visual-bottom{color:#52675d!important}
+.apex-site .apex-system .apex-process-card{background:#fff!important}
+.apex-site .apex-system .apex-process-card i{color:#176b4e!important}
+
+/* The final call-to-action is intentionally dark, but all its text stays high contrast. */
+.apex-site .apex-closing{
+  background:radial-gradient(ellipse at 78% 25%,#3a5c4c 0,transparent 42%),#203a32!important;
+  color:#fff!important;
+}
+.apex-site .apex-closing h2,.apex-site .apex-closing .apex-section-kicker,
+.apex-site .apex-closing-foot,.apex-site .apex-closing p{
+  color:#fff!important;
+}
+.apex-site .apex-closing h2 em{
+  color:#ffc0a9!important;-webkit-text-fill-color:#ffc0a9!important;
+}
+.apex-site .apex-closing .apex-button-light{
+  background:#fff!important;color:#203a32!important;border:1px solid #fff!important;
+}
+.apex-site .apex-footer{
+  background:#172d27!important;color:#f5f5ef!important;border-color:#365247!important;
+}
+.apex-site .apex-footer p,.apex-site .apex-footer nav a,
+.apex-site .apex-footer-bottom,.apex-site .apex-footer-bottom a,
+.apex-site .apex-footer-email,.apex-site .apex-footer-brand b,
+.apex-site .apex-footer-brand small{
+  color:#e5eee8!important;
+}
+.apex-site .apex-footer-brand b span{color:#f2a28c!important}
+
+/* Services route */
+.services-page{background:#f8f7f3!important;color:#263a35!important}
+.services-page .site-header{background:rgba(250,250,246,.97)!important;border-color:#dfe7e1!important}
+.services-page .wordmark-main{color:#263a35!important}
+.services-page .wordmark-sub,.services-page .desktop-nav a{color:#40564c!important}
+.services-page .header-cta{background:#176b4e!important;color:#fff!important}
+.services-page .services-hero{background:radial-gradient(ellipse at 82% 5%,#f3e3dc,transparent 42%),#f8f7f3!important}
+.services-page .services-hero h1,.services-page .services-end h2{color:#263a35!important}
+.services-page .services-hero h1 em,.services-page .services-end h2 em{color:#b95f4b!important;-webkit-text-fill-color:#b95f4b!important}
+.services-page .services-hero>p,.services-page .services-end>p{color:#53655d!important}
+.services-page .services-explainer{background:#eaf2eb!important}
+.services-page .services-explainer strong{color:#263a35!important}
+.services-page .services-explainer p{color:#53655d!important}
+.services-page .service-detail{background:#fff!important;border-color:#dfe7e1!important}
+.services-page .service-detail h2,.services-page .service-detail-content>strong{color:#263a35!important}
+.services-page .service-detail p,.services-page .service-detail li{color:#53655d!important}
+.services-page .service-detail-number{color:#64766b!important}
+.services-page .services-end{background:#eaf1eb!important}
+.services-page .inner-footer{background:#e6eee7!important;color:#40564c!important}
+.services-page .inner-footer a{color:#176b4e!important}
+
+/* Contact route: inputs, labels, sidebar and footer use explicit readable colours. */
+.contact-page{background:#f8f7f3!important;color:#263a35!important}
+.contact-page .site-header{background:rgba(250,250,246,.97)!important;border-color:#dfe7e1!important}
+.contact-page .wordmark-main{color:#263a35!important}
+.contact-page .wordmark-sub,.contact-page .desktop-nav a{color:#40564c!important}
+.contact-page .header-cta{background:#176b4e!important;color:#fff!important}
+.contact-page .contact-page-hero{background:radial-gradient(ellipse at 82% 10%,#f3e3dc,transparent 42%),#f8f7f3!important}
+.contact-page .contact-page-hero h1{color:#263a35!important}
+.contact-page .contact-page-hero h1 em{color:#b95f4b!important;-webkit-text-fill-color:#b95f4b!important}
+.contact-page .contact-page-hero>p,.contact-page .contact-hero-points{color:#53655d!important}
+.contact-page .contact-form-wrap,.contact-page .contact-aside{background:#fff!important;color:#263a35!important;border-color:#dfe7e1!important}
+.contact-page .form-heading,.contact-page .aside-label{color:#586d61!important}
+.contact-page .contact-form-intro h2,.contact-page .contact-aside-feature h2{color:#263a35!important}
+.contact-page .contact-form-intro p,.contact-page .contact-aside-feature p,
+.contact-page .contact-aside-steps li span{color:#53655d!important}
+.contact-page .contact-form label{color:#354b40!important}
+.contact-page .contact-form input:not([type=checkbox]),
+.contact-page .contact-form select,.contact-page .contact-form textarea{
+  background:#fff!important;color:#263a35!important;border-color:#cbd8cf!important;
+}
+.contact-page .contact-form input::placeholder,.contact-page .contact-form textarea::placeholder{color:#687a70!important;opacity:1}
+.contact-page .contact-form .optional,.contact-page .contact-form .form-note{color:#586d61!important}
+.contact-page .contact-form .consent{color:#43584e!important}
+.contact-page .contact-form .consent a,.contact-page .contact-direct>a{color:#176b4e!important}
+.contact-page .contact-aside-steps li strong{color:#263a35!important}
+.contact-page .contact-aside-steps li>b{color:#a94f3d!important}
+.contact-page .contact-direct{background:#f5f8f4!important;border-color:#dfe7e1!important}
+.contact-page .inner-footer{background:#e6eee7!important;color:#40564c!important}
+.contact-page .inner-footer a{color:#176b4e!important}
+
+/* Legal pages */
+.legal-page{max-width:900px;margin:0 auto;padding:70px 7% 100px;background:#f8f7f3!important;color:#263a35!important}
+.legal-page h1,.legal-page h2{color:#263a35!important}
+.legal-page p{color:#43584e!important;line-height:1.85}
+.legal-page .section-label,.legal-page .legal-small{color:#586d61!important}
+.legal-page .legal-back,.legal-page .text-arrow{color:#176b4e!important}
+
+/* Contrast-safe controls and motion fallback */
+.apex-site button,.inner-page button{color:inherit}
+@media(prefers-reduced-motion:reduce){
+  .creator-art-logo,.platform-orbit-track,.platform-orbit-item>button,
+  .platform-mark,.core-pulse,.core-logo,.ring-inner,.ring-glow,
+  .creator-art-ring,.creator-art-orbit,.contact-aside-orbit{animation:none!important}
+}
