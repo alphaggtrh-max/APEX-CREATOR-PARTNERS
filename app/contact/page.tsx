@@ -10,11 +10,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main className="inner-page">
-      <header className="site-header inner-header">
-        <a className="wordmark" href="/"><span className="wordmark-main">APEX<span className="wordmark-mark">.</span></span><span className="wordmark-sub">CREATOR PARTNERS</span></a>
-        <nav className="desktop-nav"><a href="/#approach">Approach</a><a href="/services">Services</a><a href="/#about">About</a></nav>
-        <a className="header-cta" href="/">Back to home <span>↗</span></a>
-      </header>
+      <SiteHeader/>
       <section className="contact-page-hero">
         <div className="section-label"><span>LET'S TALK</span> / CONTACT</div>
         <h1>Start with a<br/><em>conversation.</em></h1>
