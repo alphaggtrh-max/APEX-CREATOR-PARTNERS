@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ContactForm from "./ContactForm";
+import SiteHeader from "../components/SiteHeader";
 
 export const metadata: Metadata = {
   title: "Contact | APEX Creator Partners",
