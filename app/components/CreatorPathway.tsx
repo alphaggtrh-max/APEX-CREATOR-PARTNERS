@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type CSSProperties } from "react";
 
 const paths = [
   {
@@ -92,7 +92,7 @@ export default function CreatorPathway() {
           <div className="platform-orbit-ring ring-inner"/>
           <div className="platform-orbit-core"><span>A</span><small>YOUR BRAND</small></div>
           {channels.map((channel, index) => (
-            <div className={`platform-orbit-item platform-${channel.style}`} key={channel.name} style={{ "--item": index } as React.CSSProperties}>
+            <div className={`platform-orbit-item platform-${channel.style}`} key={channel.name} style={{ "--item": index } as CSSProperties}>
               <span className="platform-mark">{channel.mark}</span>
               <span className="platform-name">{channel.name}<small>{channel.role}</small></span>
             </div>
