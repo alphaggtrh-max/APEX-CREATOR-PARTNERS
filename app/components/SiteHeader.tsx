@@ -11,12 +11,13 @@ export default function SiteHeader() {
         <span className="wordmark-sub">CREATOR PARTNERS</span>
       </a>
       <nav className={"desktop-nav" + (open ? " nav-open" : "")} aria-label="Main navigation">
-        <a href="/#approach" onClick={() => setOpen(false)}>Approach</a>
-        <a href="/services" onClick={() => setOpen(false)}>Services</a>
+        <a href="/#services" onClick={() => setOpen(false)}>Services</a>
+        <a href="/#system" onClick={() => setOpen(false)}>System</a>
         <a href="/#about" onClick={() => setOpen(false)}>About</a>
-        <a className="mobile-nav-contact" href="/contact" onClick={() => setOpen(false)}>Contact ↗</a>
+        <a href="/#faq" onClick={() => setOpen(false)}>FAQ</a>
+        <a className="mobile-nav-contact" href="/contact" onClick={() => setOpen(false)}>Apply now ↗</a>
       </nav>
-      <a className="header-cta" href="/contact">Discuss a partnership <span>↗</span></a>
+      <a className="header-cta" href="/contact">Apply now <span>↗</span></a>
       <button className="mobile-menu-toggle" type="button" aria-label={open ? "Close navigation" : "Open navigation"} aria-expanded={open} onClick={() => setOpen(!open)}>{open ? "×" : "☰"}</button>
     </header>
   );
