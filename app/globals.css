@@ -695,3 +695,68 @@ body{background:var(--bg);color:var(--ink)}
 .services-page .inner-footer{background:#e9efea!important;color:#6b7b72!important;border-color:#dce5de!important}
 .services-page .inner-footer a{color:#52675c!important}
 @media(max-width:700px){.services-hero{padding:60px 6% 38px}.services-explainer{margin:0 6% 20px;grid-template-columns:38px 1fr;padding:16px}.services-explainer-icon{width:36px;height:36px}.services-explainer>a{grid-column:2}.services-page .service-detail-list{padding:0 6% 40px}.services-page .service-detail{grid-template-columns:38px 1fr;padding:23px 17px;gap:13px}.service-detail-icon{width:34px;height:34px;font-size:17px}.services-page .service-detail h2{font-size:22px}.services-page .service-detail-link{grid-column:2}.services-page .service-detail ul{display:block}.services-page .service-detail li{padding:5px 0}.services-page .services-end{padding:65px 6% 75px}}
+
+/* ===== Neon theme + interactive platform orbit ===== */
+.apex-site,.inner-page{--apex-bg:#0b0612;--apex-panel:#150b22;--apex-ink:#f7eefe;--apex-muted:#b9a7cc;--apex-line:rgba(255,61,139,.18);--accent:#ff3d8b;--accent2:#ff3d8b;background:#0b0612;color:#f7eefe}
+.apex-site h1,.apex-site h2,.apex-site h3,.inner-page h1,.inner-page h2,.inner-page h3{color:#fff}
+.apex-site em,.inner-page em{background:linear-gradient(90deg,#ff3d8b,#b44dff,#ffb547);-webkit-background-clip:text;background-clip:text;color:transparent}
+.apex-site p,.inner-page p{color:#c9b8da}
+.site-header{background:rgba(11,6,18,.85);border-color:rgba(255,61,139,.18)}
+.desktop-nav a,.header-cta{color:#e8d9f5}
+.header-cta{background:linear-gradient(90deg,#ff3d8b,#b44dff);border:0;color:#fff}
+.header-cta span{color:#fff}
+.wordmark{flex-direction:row;align-items:center;gap:10px}
+.wordmark-text{display:flex;flex-direction:column;gap:2px}
+.wordmark-main{color:#fff}
+.wordmark-logo{width:38px;height:38px;filter:drop-shadow(0 0 10px #ff3d8b88);transition:transform .4s}
+.wordmark:hover .wordmark-logo{transform:rotate(-8deg) scale(1.1)}
+.apex-button-primary,.button-primary{background:linear-gradient(90deg,#ff3d8b,#b44dff)!important;color:#fff!important;box-shadow:0 10px 30px #ff3d8b44}
+.apex-footer-logo{width:34px;height:34px;margin-right:8px;vertical-align:middle}
+.creator-art-logo{width:70%;height:70%;filter:drop-shadow(0 0 18px #ff3d8baa);animation:apexFloat 4s ease-in-out infinite}
+.creator-art-icon svg,.services-explainer-icon svg,.contact-aside-monogram svg{width:100%;height:100%}
+@keyframes apexFloat{50%{transform:translateY(-6px) scale(1.04)}}
+
+.platform-ecosystem{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center;padding:60px 0}
+.platform-spotlight{display:flex;gap:16px;align-items:flex-start;margin:24px 0 14px;padding:18px;border-radius:16px;background:#150b22;border:1px solid var(--brand);box-shadow:0 0 30px color-mix(in srgb,var(--brand) 35%,transparent);animation:spotIn .5s ease}
+.platform-spotlight-logo{width:52px;height:52px;flex:none}
+.platform-spotlight-logo svg{width:100%;height:100%}
+.platform-spotlight b{display:flex;flex-direction:column;color:#fff}
+.platform-spotlight small{font:10px var(--mono);letter-spacing:.14em;color:var(--brand)}
+.platform-spotlight p{margin:6px 0 0;font-size:13px;line-height:1.6}
+@keyframes spotIn{from{opacity:0;transform:translateY(10px)}}
+.platform-dots{display:flex;gap:8px;margin-bottom:18px}
+.platform-dots button{width:10px;height:10px;border-radius:99px;border:0;background:#3a2650;cursor:pointer;transition:all .3s}
+.platform-dots button.is-active{width:28px;background:linear-gradient(90deg,#ff3d8b,#b44dff)}
+
+.platform-orbit{--tx:0;--ty:0;position:relative;aspect-ratio:1;max-width:560px;width:100%;margin:auto;perspective:900px}
+.platform-orbit-stage{position:absolute;inset:0;transform:rotateX(calc(var(--ty)*-14deg)) rotateY(calc(var(--tx)*14deg));transition:transform .3s ease-out;transform-style:preserve-3d}
+.platform-orbit-ring{position:absolute;border-radius:50%;inset:8%;border:1px solid rgba(255,61,139,.35)}
+.ring-inner{inset:26%;border:1px dashed rgba(180,77,255,.5);animation:orbit 30s linear infinite reverse}
+.ring-glow{inset:38%;border:0;background:radial-gradient(circle,#ff3d8b55,transparent 70%);filter:blur(10px);animation:glowPulse 3s ease-in-out infinite}
+@keyframes glowPulse{50%{opacity:.5;transform:scale(1.15)}}
+.platform-orbit-track{position:absolute;inset:0;animation:orbit 40s linear infinite}
+.platform-orbit.is-paused .platform-orbit-track,.platform-orbit.is-paused .platform-orbit-item{animation-play-state:paused}
+.platform-orbit-arm{position:absolute;left:50%;top:50%;width:0;height:0;transform:rotate(var(--angle))}
+.platform-orbit-beam{position:absolute;left:0;top:-1px;height:2px;width:200px;transform-origin:left;background:linear-gradient(90deg,transparent,var(--brand));opacity:.15;transition:opacity .4s}
+.platform-orbit-arm.is-active .platform-orbit-beam{opacity:.9;box-shadow:0 0 12px var(--brand)}
+.platform-orbit-item{position:absolute;left:200px;top:0;transform:translate(-50%,-50%) rotate(calc(var(--angle)*-1));}
+.platform-orbit-item>button{animation:counterSpin 40s linear infinite}
+.platform-orbit.is-paused .platform-orbit-item>button{animation-play-state:paused}
+@keyframes counterSpin{to{transform:rotate(-360deg)}}
+.platform-orbit-chip{display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border-radius:99px;background:rgba(21,11,34,.9);border:1px solid rgba(255,255,255,.1);color:#fff;cursor:pointer;white-space:nowrap;font:600 13px var(--sans);transition:border-color .3s,box-shadow .3s,scale .3s}
+.platform-orbit-chip:hover,.platform-orbit-arm.is-active .platform-orbit-chip{border-color:var(--brand);box-shadow:0 0 24px color-mix(in srgb,var(--brand) 60%,transparent);scale:1.12}
+.platform-mark{width:36px;height:36px;display:block;animation:logoBob 3s ease-in-out infinite;animation-delay:calc(var(--i)*-.5s)}
+.platform-mark svg{width:100%;height:100%;display:block}
+@keyframes logoBob{50%{transform:translateY(-4px) rotate(-6deg)}}
+.platform-name{display:flex;flex-direction:column;text-align:left}
+.platform-name small{font:9px var(--mono);color:#b9a7cc;letter-spacing:.08em}
+.platform-orbit-core{position:absolute;left:50%;top:50%;width:130px;height:130px;margin:-65px 0 0 -65px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 30% 30%,#2a1240,#0b0612);border:1px solid #ff3d8b88;box-shadow:0 0 50px #ff3d8b55,inset 0 0 30px #b44dff44;z-index:2}
+.core-logo{width:62%;height:62%;animation:apexFloat 4s ease-in-out infinite}
+.platform-orbit-core small{position:absolute;bottom:14px;font:700 9px var(--mono);letter-spacing:.3em;color:#ffb547}
+.core-pulse{position:absolute;inset:0;border-radius:50%;border:2px solid #ff3d8b;animation:corePulse 2.6s ease-out infinite}
+.core-pulse-2{animation-delay:1.3s;border-color:#b44dff}
+@keyframes corePulse{from{transform:scale(1);opacity:.8}to{transform:scale(1.9);opacity:0}}
+.platform-orbit-caption{position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);font:10px var(--mono);letter-spacing:.2em;color:#b9a7cc}
+.platform-orbit-caption i{color:#ff3d8b;font-style:normal}
+@media(max-width:900px){.platform-ecosystem{grid-template-columns:1fr}.platform-orbit-beam{width:130px}.platform-orbit-item{left:130px}.platform-name{display:none}.platform-orbit-chip{padding:6px}.platform-orbit-core{width:100px;height:100px;margin:-50px 0 0 -50px}}
+@media(prefers-reduced-motion:reduce){.platform-orbit-track,.platform-orbit-item>button,.platform-mark,.core-pulse,.core-logo,.ring-inner,.ring-glow,.creator-art-logo{animation:none!important}}
