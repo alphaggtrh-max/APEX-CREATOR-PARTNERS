@@ -64,7 +64,7 @@ export default function Home() {
           <div className="hero-footnote"><span className="footnote-rule"/> BUILT AROUND THE CREATOR. NEVER THE OTHER WAY AROUND.</div>
         </div>
         <div className="hero-art"><GrowthDiagram/></div>
-        <div className="hero-bottomline"><span>MUNICH · WORKING WORLDWIDE</span><span>01 / APEX CREATOR PARTNERS</span></div>
+        <div className="hero-bottomline"><span>INDEPENDENT · CREATOR-LED</span><span>01 / APEX CREATOR PARTNERS</span></div>
       </section>
 
       <section className="trust-strip"><span>ONE PARTNER</span><i>✳</i><span>CONNECTED THINKING</span><i>✳</i><span>MEANINGFUL PROGRESS</span><i>✳</i><span>CREATOR-LED</span></section>
