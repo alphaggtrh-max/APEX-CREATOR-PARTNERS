@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500;1,600&display=swap');
 
-:root{--bg:#fbf8f3;--paper:#fffdf9;--panel:#f2eee7;--panel2:#e9e2d8;--text:#202b36;--muted:#69737b;--line:rgba(32,43,54,.13);--accent:#f47b61;--accent2:#e96850;--lav:#dcd9f6;--mint:#d9eee3;--mono:'DM Mono',monospace;--sans:'DM Sans',Manrope,Arial,sans-serif}
+:root{--bg:#fbf8f3;--paper:#fffdf9;--panel:#f2eee7;--panel2:#e9e2d8;--text:#202b36;--muted:#69737b;--line:rgba(32,43,54,.13);--accent:#f47b61;--accent2:#e96850;--lav:#dcd9f6;--mint:#d9eee3;--mono:'SFMono-Regular',Consolas,monospace;--sans:Inter,'Segoe UI',Arial,sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:90px}
 body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);-webkit-font-smoothing:antialiased}
