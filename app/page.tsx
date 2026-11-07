@@ -10,6 +10,41 @@ const principles = [
   ["Built around the individual", "There is no one-size-fits-all playbook. The scope is shaped around your audience, goals and working style."],
 ];
 
+function RoadmapFeature() {
+  return (
+    <section className="roadmap-feature section-wrap" aria-labelledby="roadmap-title">
+      <div className="roadmap-shell">
+        <div className="roadmap-copy">
+          <span className="roadmap-number">01</span>
+          <div className="section-label"><span>THE FIRST STEP</span> / YOUR ROADMAP</div>
+          <h2 id="roadmap-title">A clearer plan.<br/><em>A stronger direction.</em></h2>
+          <p>We start by understanding where your creator business stands today — your positioning, content, audience and priorities. Then we map out the next steps around your goals.</p>
+          <a className="roadmap-button" href="/contact">Let's build your roadmap <span>↗</span></a>
+          <span className="roadmap-footnote">NO GENERIC PLAYBOOKS. NO GUARANTEED OUTCOMES.</span>
+        </div>
+        <div className="roadmap-art">
+          <div className="roadmap-glow roadmap-glow-one"/>
+          <div className="roadmap-glow roadmap-glow-two"/>
+          <div className="roadmap-dashboard">
+            <div className="dashboard-header"><span>YOUR CREATOR ROADMAP</span><span className="dashboard-live"><i/> FRAMEWORK / 01</span></div>
+            <div className="dashboard-feature">
+              <div className="dashboard-feature-copy"><span className="dashboard-kicker">01 / POSITIONING</span><strong>Know what<br/>sets you apart.</strong><small>Clarity before activity</small></div>
+              <div className="dashboard-feature-visual"><div className="orbit orbit-a"/><div className="orbit orbit-b"/><div className="orbit-core">A<span>.</span></div><i className="orbit-dot dot-a"/><i className="orbit-dot dot-b"/></div>
+            </div>
+            <div className="dashboard-metrics">
+              <div className="dashboard-metric"><div><span>CONTENT SYSTEM</span><b>Consistency</b><small>Plan · Create · Publish</small></div><svg viewBox="0 0 120 42" aria-hidden="true"><path d="M2 33 C18 30 20 12 37 18 S57 30 72 18 S92 8 118 5"/></svg></div>
+              <div className="dashboard-metric"><div><span>AUDIENCE</span><b>Connection</b><small>Reach · Engage · Learn</small></div><svg viewBox="0 0 120 42" aria-hidden="true"><path d="M2 31 L20 29 L35 20 L50 25 L66 13 L83 19 L100 8 L118 4"/></svg></div>
+              <div className="dashboard-metric"><div><span>BUSINESS</span><b>Momentum</b><small>Review · Refine · Repeat</small></div><svg viewBox="0 0 120 42" aria-hidden="true"><path d="M2 35 C25 35 25 22 43 24 S60 12 76 17 S99 12 118 3"/></svg></div>
+            </div>
+            <div className="dashboard-footer"><span><i/> A FRAMEWORK BUILT AROUND YOU</span><span>APEX / 2026</span></div>
+          </div>
+          <div className="roadmap-sticker"><span>THOUGHTFUL BY DESIGN</span><b>↗</b></div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function GrowthDiagram() {
   return (
     <div className="strategy-visual" aria-label="Illustration of a creator growth workflow">
@@ -78,6 +113,8 @@ export default function Home() {
           <div className="editorial-caption"><span>THE RIGHT STRUCTURE<br/>MAKES ROOM FOR CREATIVITY.</span><span>NOT MORE NOISE.<br/>MORE INTENTION.</span></div>
         </div>
       </section>
+
+      <RoadmapFeature/>
 
       <section className="services-section" id="services"><div className="section-wrap">
         <div className="section-heading"><div><div className="section-label"><span>02</span> / WHAT WE DO</div><h2>One connected<br/><em>growth partner.</em></h2></div><p>Focused support across the parts of your creator business that benefit from a clearer plan and stronger execution.</p></div>
