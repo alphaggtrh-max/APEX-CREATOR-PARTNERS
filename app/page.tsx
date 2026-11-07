@@ -47,15 +47,13 @@ function SignalChart() {
   );
 }
 
+import SiteHeader from "./components/SiteHeader";
+
 export default function Home() {
   return (
-    <main>
+    <main id="top">
       <div className="topline"><span>INDEPENDENT CREATOR PARTNERSHIP</span><span>STRATEGY · CONTENT · OPERATIONS</span></div>
-      <header className="site-header">
-        <a className="wordmark" href="/" aria-label="APEX Creator Partners home"><span className="wordmark-main">APEX<span className="wordmark-mark">.</span></span><span className="wordmark-sub">CREATOR PARTNERS</span></a>
-        <nav className="desktop-nav" aria-label="Main navigation"><a href="#approach">Approach</a><a href="#services">Services</a><a href="#about">About</a></nav>
-        <a className="header-cta" href="/contact">Discuss a partnership <span>↗</span></a>
-      </header>
+      <SiteHeader/>
 
       <section className="hero">
         <div className="hero-copy-block">
