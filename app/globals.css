@@ -403,3 +403,119 @@ body{background:var(--bg);color:var(--ink)}
 .inner-page .inner-footer{background:#070a10!important;color:#aab7c1;border-color:rgba(202,218,229,.13)}
 .legal-page{background:#090d14!important;color:#eaf0f3!important}.legal-page p,.legal-page li{color:#aab7c1}.legal-page h2{color:#f4f7f8}
 @media(max-width:700px){.inner-page .site-header{height:72px}.inner-page .mobile-menu-toggle{color:#f5f8fa}.inner-page .desktop-nav.nav-open{background:#0b121b;border-color:#334453}.inner-page .desktop-nav.nav-open a{color:#f3f7f9}}
+
+
+/* APEX visual refresh — lighter editorial palette and creator-platform motion */
+:root{
+  --apex-bg:#f7f7f3;
+  --apex-panel:#ffffff;
+  --apex-panel-soft:#eef2ef;
+  --apex-text:#25343b;
+  --apex-muted:#65747a;
+  --apex-line:#dfe6e2;
+  --apex-green:#168b68;
+  --apex-green-soft:#dff2e9;
+}
+.apex-site{background:var(--apex-bg);color:var(--apex-text)}
+.apex-topline{background:#e8f0eb;color:#52665e;border-bottom:1px solid #d9e5dd}
+.apex-site .site-header{background:rgba(250,251,248,.92);border-color:#dfe6e2}
+.apex-site .wordmark-main{color:#24343b}
+.apex-site .wordmark-sub{color:#718078}
+.apex-site .desktop-nav a,.apex-site .header-cta{color:#53635f}
+.apex-site .header-cta{border-color:#cbd8d0;background:#fff}
+.apex-hero{background:radial-gradient(ellipse at 78% 40%,#f6e7df 0,transparent 44%),linear-gradient(115deg,#fbfcf9,#f0f5f1 100%)}
+.apex-hero-copy h1{color:#24343b}
+.apex-hero-copy h1 em,.apex-section h2 em{color:#c97861}
+.apex-hero-copy>p{color:#64737a}
+.apex-eyebrow,.apex-section-kicker{color:#6d7b77}
+.apex-eyebrow i{background:#c97861;box-shadow:0 0 0 5px #c978611c}
+.apex-button-primary{background:#243b3b;color:#fff}
+.apex-button-primary:hover{background:#315653}
+.apex-text-link,.apex-inline-link{color:#405852}
+.apex-hero-visual{background:radial-gradient(circle at 50% 50%,#e7f2eb 0,transparent 68%)}
+.apex-visual-orbit{border-color:rgba(22,139,104,.27)}
+.apex-monogram{background:radial-gradient(circle,#fafffc 0,#e6f2eb 62%,#dcebe2 100%);border-color:#91bba6;box-shadow:0 0 65px #168b6818,inset 0 0 35px #168b6810}
+.apex-monogram span{color:#28423c}
+.apex-float-card{background:rgba(255,255,255,.94);border-color:#d9e5dd;box-shadow:0 15px 36px #29374012}
+.apex-float-card b{color:#2b3c40}.apex-float-card small{color:#168b68}.apex-float-card span{color:#718078}
+.apex-hero-visual-caption,.apex-hero-index{color:#718078}
+.apex-proofline{background:#edf3ee;border-color:#dfe6e2;color:#66776f}
+.apex-proofline i{color:#c97861}
+.apex-section{border-color:#e0e7e2}
+.apex-section h2{color:#25363c}
+.apex-intro-grid p,.apex-system-copy>p,.apex-faq-grid>div>p{color:#66767b}
+.apex-intro-grid .apex-lead{color:#40545a}
+.apex-services,.apex-principles{background:#edf2ee}
+.apex-section-head>p{color:#68777b}
+.apex-service-grid{border-color:#d8e2dc}
+.apex-service-card{border-color:#d8e2dc}
+.apex-service-card:hover{background:#fff}
+.apex-service-meta{color:#788780}.apex-service-meta span:last-child,.apex-service-symbol,.apex-service-card>a span{color:#168b68}
+.apex-service-symbol{border-color:#b7d4c4}
+.apex-service-card h3{color:#2b3d40}
+.apex-service-card>p{color:#68777b}
+.apex-service-card li{color:#596b6c;border-color:#e8eeea}
+.apex-service-card>a{color:#425b55}
+.apex-system{background:radial-gradient(ellipse at 78% 50%,#e5f2e9,transparent 43%),#f7f8f5}
+.apex-system-copy>small{color:#788780}
+.apex-button-outline{border-color:#b9ccc1;color:#35524a}
+.apex-button-outline:hover{border-color:#168b68}
+.apex-process-visual{background:linear-gradient(145deg,#fff,#eef4ef);border-color:#d7e3db;box-shadow:0 22px 55px #29374010}
+.apex-process-visual:before{background-image:linear-gradient(#879b8d12 1px,transparent 1px),linear-gradient(90deg,#879b8d12 1px,transparent 1px)}
+.apex-visual-top,.apex-visual-bottom{color:#75847d}
+.apex-process-line{background:linear-gradient(90deg,#168b68,#9dc9ad)}
+.apex-process-line i{background:#168b68;box-shadow:0 0 0 6px #168b681a}
+.apex-process-card{background:#fff;border-color:#dce7df}
+.apex-process-card b{color:#30433f}.apex-process-card small{color:#6d7c76}.apex-process-card>span,.apex-process-card>i{color:#168b68}
+.apex-manifesto{color:#2d4142}
+.apex-principle-grid article{border-color:#d5e0d9}
+.apex-principle-grid h3{color:#30433f}.apex-principle-grid p{color:#687872}
+.apex-faq-list details,.apex-faq-list details:first-child{border-color:#dce5df}
+.apex-faq-list summary{color:#30423f}.apex-faq-list details p{color:#687872}
+.apex-faq-list summary span,.apex-principle-grid article>span{color:#168b68}
+.apex-closing{background:linear-gradient(115deg,#e4f1e8,#edf3ef 65%,#f4eee9);color:#263b39}
+.apex-closing h2{color:#263b39}.apex-closing h2 em{color:#168b68}
+.apex-closing>p{color:#5d7169}.apex-closing>.apex-section-kicker{color:#60756c}
+.apex-closing-orb{border-color:#168b6830;box-shadow:0 0 0 40px #168b6808,0 0 0 90px #168b6805}
+.apex-closing-foot{border-color:#b9cec1;color:#71847a}
+.apex-button-light{background:#263d3a;color:#fff}.apex-button-light:hover{background:#365b52}
+.apex-footer{background:#e9efea}
+.apex-footer-brand b{color:#263a38}.apex-footer-brand small{color:#718078}
+.apex-footer-main>p,.apex-footer-main nav a,.apex-footer-email{color:#586b64}
+.apex-footer-main nav a:hover,.apex-footer-email:hover{color:#168b68}
+.apex-footer-bottom{border-color:#d1ddd5;color:#74827b}.apex-footer-bottom a{color:#4d695d}
+.apex-social-section{position:relative;overflow:hidden;padding:76px 7.2%;background:#f1f5f1;border-bottom:1px solid #dfe7e1}
+.apex-social-head{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:32px}
+.apex-social-head h2{font-size:clamp(27px,3.3vw,42px);line-height:1.08;letter-spacing:-.06em;color:#2c403c;margin:12px 0 0}
+.apex-social-head p{max-width:330px;color:#6c7a74;font-size:11px;line-height:1.8;margin:0}
+.apex-platform-stage{position:relative;min-height:205px;border:1px solid #dce7df;border-radius:12px;background:radial-gradient(ellipse at 50% 50%,#fff 0,#f8faf7 65%,#eef4ef 100%);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.apex-platform-stage:before,.apex-platform-stage:after{content:"";position:absolute;width:420px;height:150px;border:1px solid #a9cbb7;border-radius:50%;transform:rotate(-12deg);opacity:.55}
+.apex-platform-stage:after{width:580px;height:190px;transform:rotate(13deg);border-style:dashed;opacity:.38}
+.apex-platform-core{position:relative;z-index:2;width:112px;height:112px;border-radius:50%;display:grid;place-items:center;background:#29443e;color:#fff;box-shadow:0 12px 35px #29443e25;font-size:29px;font-weight:800;letter-spacing:-.1em}
+.apex-platform-core small{position:absolute;bottom:23px;font:6px var(--mono);letter-spacing:.15em;color:#b9d9c8}
+.apex-platform-chip{position:absolute;z-index:3;display:flex;align-items:center;gap:9px;padding:11px 15px;border:1px solid #d8e5dc;border-radius:999px;background:#fff;box-shadow:0 10px 24px #2937400d;color:#3b5149;font:10px var(--mono);letter-spacing:.04em;animation:platformFloat 6s ease-in-out infinite}
+.apex-platform-chip b{font:700 11px var(--sans);letter-spacing:-.02em}
+.apex-platform-chip i{width:8px;height:8px;border-radius:50%;background:#168b68;box-shadow:0 0 0 4px #168b6815}
+.apex-platform-chip:nth-of-type(1){left:8%;top:24%;animation-delay:-1s}
+.apex-platform-chip:nth-of-type(2){right:10%;top:19%;animation-delay:-3s}
+.apex-platform-chip:nth-of-type(3){left:19%;bottom:18%;animation-delay:-2s}
+.apex-platform-chip:nth-of-type(4){right:18%;bottom:17%;animation-delay:-4s}
+.apex-platform-chip:nth-of-type(5){left:43%;top:7%;animation-delay:-2.5s}
+.apex-platform-chip:nth-of-type(6){right:42%;bottom:5%;animation-delay:-.5s}
+@keyframes platformFloat{0%,100%{translate:0 0}50%{translate:0 -8px}}
+.apex-platform-note{position:absolute;bottom:13px;left:18px;color:#829088;font:7px var(--mono);letter-spacing:.1em}
+@media(max-width:700px){
+ .apex-social-section{padding:62px 6%}
+ .apex-social-head{display:block}.apex-social-head p{margin-top:15px}
+ .apex-platform-stage{min-height:275px}
+ .apex-platform-stage:before{width:280px;height:140px}.apex-platform-stage:after{width:340px;height:190px}
+ .apex-platform-core{width:88px;height:88px;font-size:24px}
+ .apex-platform-chip{padding:9px 11px;font-size:8px}.apex-platform-chip b{font-size:9px}
+ .apex-platform-chip:nth-of-type(1){left:4%;top:17%}
+ .apex-platform-chip:nth-of-type(2){right:4%;top:17%}
+ .apex-platform-chip:nth-of-type(3){left:4%;bottom:20%}
+ .apex-platform-chip:nth-of-type(4){right:4%;bottom:20%}
+ .apex-platform-chip:nth-of-type(5){left:37%;top:4%}
+ .apex-platform-chip:nth-of-type(6){right:35%;bottom:4%}
+}
+@media(prefers-reduced-motion:reduce){.apex-platform-chip{animation:none!important}}
