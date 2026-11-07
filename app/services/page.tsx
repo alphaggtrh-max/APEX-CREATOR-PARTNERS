@@ -3,7 +3,7 @@ import SiteHeader from "../components/SiteHeader";
 
 export const metadata: Metadata = { title: "Services | APEX Creator Partners", description: "Creator growth strategy, content direction and business operations." };
 
-const items = [
+const items: [string, string, string, string[]][] = [
   ["01", "Growth strategy", "Build from a clear position. We look at your current presence, audience, offer and goals, then define priorities that make sense for your stage.", ["Positioning and differentiation", "Audience and channel research", "Growth priorities and planning"]],
   ["02", "Content direction", "Create a repeatable system for showing up consistently. Keep your voice and creative identity while bringing more intention to planning and distribution.", ["Content pillars and planning", "Creative direction", "Publishing and distribution workflows"]],
   ["03", "Business operations", "Make the business behind the creator easier to run. Bring structure to recurring work, review useful signals and make decisions with context.", ["Workflow and process design", "Performance reviews", "Operational coordination"]],
