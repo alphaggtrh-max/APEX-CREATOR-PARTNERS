@@ -957,3 +957,16 @@ body{background:var(--apex-light-bg)!important;color:var(--apex-light-ink)!impor
   .platform-mark,.core-pulse,.core-logo,.ring-inner,.ring-glow,
   .creator-art-ring,.creator-art-orbit,.contact-aside-orbit{animation:none!important}
 }
+
+
+/* Final AA contrast tuning for smaller text and accent headlines */
+.apex-site .apex-section-kicker,.apex-site .apex-hero-note,
+.apex-site .apex-process-card small,.services-page .service-detail-number,
+.contact-page .contact-form .optional,.contact-page .contact-form .form-note{
+  color:#5f7066!important;
+}
+.apex-site em,.inner-page em,.legal-page em,
+.apex-site .apex-hero h1 em,.services-page .services-hero h1 em,
+.services-page .services-end h2 em,.contact-page .contact-page-hero h1 em{
+  color:#a94f3d!important;-webkit-text-fill-color:#a94f3d!important;
+}
