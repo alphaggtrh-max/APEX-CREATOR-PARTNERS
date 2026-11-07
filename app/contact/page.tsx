@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ContactForm from "./ContactForm";
 import SiteHeader from "../components/SiteHeader";
+import { ApexLogo } from "../components/BrandLogos";
 
 export const metadata: Metadata = {
   title: "Contact | APEX Creator Partners",
@@ -27,7 +28,7 @@ export default function ContactPage() {
 
         <aside className="contact-aside">
           <div className="contact-aside-feature">
-            <div className="contact-aside-art"><div className="contact-aside-orbit"/><div className="contact-aside-monogram">A<span>+</span></div><small>APEX / CREATOR PARTNERS</small></div>
+            <div className="contact-aside-art"><div className="contact-aside-orbit"/><div className="contact-aside-monogram"><ApexLogo/></div><small>APEX / CREATOR PARTNERS</small></div>
             <span className="aside-label">A STRAIGHTFORWARD FIRST STEP</span>
             <h2>You stay in control.</h2>
             <p>This is simply an introduction. You decide what to share, what support you want and whether you would like to take things further.</p>

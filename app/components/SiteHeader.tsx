@@ -1,14 +1,18 @@
 "use client";
 
 import { useState } from "react";
+import { ApexLogo } from "./BrandLogos";
 
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
     <header className="site-header">
       <a className="wordmark" href="/" aria-label="APEX Creator Partners home" onClick={() => setOpen(false)}>
+        <ApexLogo className="wordmark-logo" title=""/>
+        <span className="wordmark-text">
         <span className="wordmark-main">APEX<span className="wordmark-mark">.</span></span>
         <span className="wordmark-sub">CREATOR PARTNERS</span>
+        </span>
       </a>
       <nav className={"desktop-nav" + (open ? " nav-open" : "")} aria-label="Main navigation">
         <a href="/#services" onClick={() => setOpen(false)}>Services</a>

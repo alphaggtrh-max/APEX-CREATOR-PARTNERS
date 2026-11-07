@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import SiteHeader from "../components/SiteHeader";
+import { ApexLogo } from "../components/BrandLogos";
 
 export const metadata: Metadata = {
   title: "Services | APEX Creator Partners",
@@ -52,7 +53,7 @@ export default function ServicesPage() {
         <div className="services-hero-note"><span/> NO ONE-SIZE-FITS-ALL PACKAGES. WE START WITH YOUR GOALS.</div>
       </section>
       <section className="services-explainer">
-        <div className="services-explainer-icon">A</div>
+        <div className="services-explainer-icon"><ApexLogo/></div>
         <div><strong>You do not need to know exactly what you need.</strong><p>Choose the area that sounds familiar. We can talk through the details together and explain what support could realistically look like.</p></div>
         <a href="/contact">Tell us about your goals <b>↗</b></a>
       </section>

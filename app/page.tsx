@@ -1,5 +1,6 @@
 import SiteHeader from "./components/SiteHeader";
 import CreatorPathway from "./components/CreatorPathway";
+import { ApexLogo, InstagramLogo, OnlyFansLogo, RedditLogo, TikTokLogo } from "./components/BrandLogos";
 
 const services = [
   { n: "01", title: "Growth strategy", tag: "DIRECTION", copy: "Understand your current position, choose realistic priorities and stop wasting energy on tactics that do not fit your brand.", points: ["Creator positioning", "Audience and channel research", "A practical growth plan"] },
@@ -40,11 +41,11 @@ export default function Home() {
         <div className="creator-art-ring art-ring-one"/>
         <div className="creator-art-ring art-ring-two"/>
         <div className="creator-art-ring art-ring-three"/>
-        <div className="creator-art-center"><span>A</span><small>APEX CREATOR PARTNERS</small></div>
-        <div className="creator-art-orbit orbit-top"><span className="creator-art-icon fan-mark">✳</span><b>CREATOR BRAND</b></div>
-        <div className="creator-art-orbit orbit-right"><span className="creator-art-icon">◎</span><b>DISCOVERY</b></div>
-        <div className="creator-art-orbit orbit-bottom"><span className="creator-art-icon">♡</span><b>COMMUNITY</b></div>
-        <div className="creator-art-orbit orbit-left"><span className="creator-art-icon">✦</span><b>SUBSCRIPTIONS</b></div>
+        <div className="creator-art-center"><ApexLogo className="creator-art-logo"/><small>APEX CREATOR PARTNERS</small></div>
+        <div className="creator-art-orbit orbit-top"><span className="creator-art-icon"><OnlyFansLogo/></span><b>SUBSCRIPTIONS</b></div>
+        <div className="creator-art-orbit orbit-right"><span className="creator-art-icon"><InstagramLogo/></span><b>DISCOVERY</b></div>
+        <div className="creator-art-orbit orbit-bottom"><span className="creator-art-icon"><RedditLogo/></span><b>COMMUNITY</b></div>
+        <div className="creator-art-orbit orbit-left"><span className="creator-art-icon"><TikTokLogo/></span><b>REACH</b></div>
         <div className="creator-art-spark spark-one">✦</div><div className="creator-art-spark spark-two">✧</div><div className="creator-art-spark spark-three">✳</div>
         <div className="creator-art-caption">A CREATOR BUSINESS IS MORE THAN A PROFILE</div>
       </div>
@@ -83,6 +84,6 @@ export default function Home() {
 
     <section className="apex-closing"><div className="apex-closing-orb"/><div className="apex-section-kicker">06 / YOUR NEXT STEP</div><h2>You bring the ambition.<br/><em>We’ll bring a plan.</em></h2><p>Tell us a little about your creator business and what you would like to change. We will take it from there, one conversation at a time.</p><a className="apex-button apex-button-light" href="/contact">Start a conversation <span>↗</span></a><div className="apex-closing-foot"><span>APEX CREATOR PARTNERS</span><span>YOUR NEXT LEVEL IS INTENTIONAL.</span></div></section>
 
-    <footer className="apex-footer"><div className="apex-footer-main"><a className="apex-footer-brand" href="/"><b>APEX<span>.</span></b><small>CREATOR PARTNERS</small></a><p>Independent creators.<br/>A clearer way forward.</p><nav><a href="#services">Services</a><a href="#system">How it works</a><a href="#about">Our approach</a><a href="#faq">FAQ</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/imprint">Imprint</a></nav><a className="apex-footer-email" href="mailto:hello@apex-creator-partners.com">hello@apex-creator-partners.com ↗</a></div><div className="apex-footer-bottom"><span>© 2026 APEX Creator Partners</span><span>18+ · Independent creator management</span><a href="#top">BACK TO TOP ↑</a></div></footer>
+    <footer className="apex-footer"><div className="apex-footer-main"><a className="apex-footer-brand" href="/"><ApexLogo className="apex-footer-logo"/><b>APEX<span>.</span></b><small>CREATOR PARTNERS</small></a><p>Independent creators.<br/>A clearer way forward.</p><nav><a href="#services">Services</a><a href="#system">How it works</a><a href="#about">Our approach</a><a href="#faq">FAQ</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/imprint">Imprint</a></nav><a className="apex-footer-email" href="mailto:hello@apex-creator-partners.com">hello@apex-creator-partners.com ↗</a></div><div className="apex-footer-bottom"><span>© 2026 APEX Creator Partners</span><span>18+ · Independent creator management</span><a href="#top">BACK TO TOP ↑</a></div></footer>
   </main>;
 }
