@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import SiteHeader from "../components/SiteHeader";
 
 export const metadata: Metadata = { title: "Services | APEX Creator Partners", description: "Creator growth strategy, content direction and business operations." };
 
