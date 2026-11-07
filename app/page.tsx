@@ -21,6 +21,28 @@ const faqs = [
   ["Is there a minimum audience or revenue requirement?", "There is no public one-size-fits-all threshold. We consider your current position, goals, consistency and whether we can offer meaningful support."],
 ];
 
+function PlatformVisual() {
+  const platforms = [
+    ["ONLYFANS", "Subscription"],
+    ["FANSLY", "Creator platform"],
+    ["REDDIT", "Community"],
+    ["INSTAGRAM", "Discovery"],
+    ["TIKTOK", "Short-form"],
+    ["X", "Distribution"],
+  ];
+  return <section className="apex-social-section" aria-label="Creator platform ecosystem">
+    <div className="apex-social-head">
+      <div><div className="apex-section-kicker">PLATFORM-AWARE STRATEGY</div><h2>One creator brand.<br/>A connected ecosystem.</h2></div>
+      <p>Different platforms play different roles — from discovery and community to subscription and retention. The right mix depends on your audience, content and boundaries.</p>
+    </div>
+    <div className="apex-platform-stage">
+      <div className="apex-platform-core">A<span><small>APEX NETWORK</small></span></div>
+      {platforms.map(([name, role]) => <div className="apex-platform-chip" key={name}><i/><div><b>{name}</b><br/><span>{role}</span></div></div>)}
+      <div className="apex-platform-note">ILLUSTRATIVE CHANNEL MAP · NOT AN ENDORSEMENT OR PLATFORM AFFILIATION</div>
+    </div>
+  </section>;
+}
+
 function ProcessVisual() {
   return <div className="apex-process-visual" aria-label="Illustrative creator business framework">
     <div className="apex-visual-top"><span>THE APEX FRAMEWORK</span><span>PROCESS / 01—04</span></div>
@@ -53,6 +75,7 @@ export default function Home() {
       <div className="apex-hero-index">01 <span>/</span> 04</div>
     </section>
     <div className="apex-proofline"><span>INDEPENDENT BY NATURE</span><i>✳</i><span>CREATOR-LED</span><i>✳</i><span>BUILT ON CLARITY</span><i>✳</i><span>LONG-TERM THINKING</span></div>
+    <PlatformVisual/>
     <section className="apex-intro apex-section" id="approach">
       <div className="apex-section-kicker">01 / THE APEX APPROACH</div>
       <div className="apex-intro-grid"><h2>Less noise.<br/><em>More direction.</em></h2><div><p className="apex-lead">A creator business is more than content. It is positioning, audience, monetization and the systems that hold everything together.</p><p>APEX brings those moving parts into one considered plan — shaped around your goals, your working style and the decisions that matter to you.</p><a className="apex-inline-link" href="/contact">See if we are a fit <span>↗</span></a></div></div>
