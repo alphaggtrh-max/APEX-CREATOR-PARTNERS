@@ -68,16 +68,39 @@ export default function Home() {
             INDEPENDENT BY NATURE. PARTNERS BY DESIGN.
           </div>
         </div>
-        <div className="hero-aside" aria-hidden="true">
-          <div className="aside-top"><span>AP / 01</span><span>STRATEGY — GROWTH — OPERATIONS</span></div>
-          <div className="apex-symbol">
-            <div className="symbol-ring ring-a" />
-            <div className="symbol-ring ring-b" />
-            <div className="symbol-core"><span>A</span></div>
-            <div className="symbol-cross cross-h" />
-            <div className="symbol-cross cross-v" />
+        <div className="hero-aside growth-visual" aria-hidden="true">
+          <svg className="growth-connectors" viewBox="0 0 520 470" fill="none">
+            <path className="connector-path" d="M90 112 C165 80 185 95 245 145 S350 190 430 120" />
+            <path className="connector-path connector-path-two" d="M90 112 C100 230 160 260 235 285 S340 350 420 365" />
+            <path className="connector-path connector-path-three" d="M245 145 C230 220 220 245 235 285" />
+            <circle className="connector-node node-one" cx="245" cy="145" r="5" />
+            <circle className="connector-node node-two" cx="235" cy="285" r="5" />
+            <circle className="connector-node node-three" cx="430" cy="120" r="5" />
+          </svg>
+          <div className="visual-kicker">THE CREATOR GROWTH SYSTEM <span>AP / 01</span></div>
+          <div className="visual-card creator-card">
+            <div className="creator-avatar"><span>✳</span></div>
+            <div><small>YOUR BRAND</small><strong>Distinctive by design.</strong></div>
+            <span className="card-spark">↗</span>
           </div>
-          <div className="aside-bottom"><span>BUILT TO MOVE FORWARD</span><span>EST. 2026</span></div>
+          <div className="visual-card strategy-card">
+            <div className="mini-icon">✦</div>
+            <small>01 / STRATEGY</small>
+            <strong>Audience<br />with intention.</strong>
+            <div className="mini-bars"><i/><i/><i/><i/><i/><i/><i/></div>
+          </div>
+          <div className="visual-card content-card">
+            <div className="card-row"><small>02 / CONTENT</small><span className="live-dot"/></div>
+            <strong>Consistency<br />creates momentum.</strong>
+            <svg className="mini-chart" viewBox="0 0 150 42"><path d="M2 32 L20 24 L36 28 L53 12 L69 20 L85 9 L103 18 L120 7 L148 11" /></svg>
+          </div>
+          <div className="visual-card insight-card">
+            <small>03 / PERFORMANCE</small>
+            <strong>Review. Learn.<br />Refine.</strong>
+            <div className="insight-line"><span/><span/><span/><span/></div>
+          </div>
+          <div className="visual-stamp"><span>✳</span> BUILT AROUND YOU</div>
+          <div className="visual-foot"><span>STRATEGY</span><i>•</i><span>CREATIVITY</span><i>•</i><span>CLARITY</span></div>
         </div>
         <div className="hero-index">01 <span>/</span> 04</div>
       </section>
