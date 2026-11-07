@@ -970,3 +970,180 @@ body{background:var(--apex-light-bg)!important;color:var(--apex-light-ink)!impor
 .services-page .services-end h2 em,.contact-page .contact-page-hero h1 em{
   color:#a94f3d!important;-webkit-text-fill-color:#a94f3d!important;
 }
+
+
+/* ===== Layout repair: prevent text collisions, edge clipping and cramped cards ===== */
+.apex-site,.apex-site *{box-sizing:border-box}
+.apex-site{width:100%;max-width:100%;overflow-x:clip}
+.apex-site .apex-section,
+.apex-site .apex-closing,
+.apex-site .apex-footer{min-width:0}
+.apex-site p,.apex-site li,.apex-site h1,.apex-site h2,.apex-site h3,
+.apex-site summary,.apex-site a,.inner-page p,.inner-page li{
+  overflow-wrap:anywhere;
+  word-break:normal;
+  hyphens:auto;
+}
+.apex-site p{max-width:100%}
+
+/* The three trust/principle cards shown in the supplied screenshot had no
+   horizontal padding after their white card backgrounds were introduced. */
+.apex-site .apex-principle-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+  align-items:stretch;
+}
+.apex-site .apex-principle-grid article{
+  min-width:0;
+  min-height:190px;
+  height:auto;
+  padding:24px 24px 26px!important;
+  border:1px solid #dfe7e1!important;
+  border-top:3px solid #b8d5c3!important;
+  background:#fff!important;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:flex-start;
+}
+.apex-site .apex-principle-grid article>span{
+  display:block;
+  margin:0 0 17px;
+  font:700 9px var(--mono);
+  line-height:1.4;
+  color:#176b4e!important;
+}
+.apex-site .apex-principle-grid h3{
+  margin:0 0 11px!important;
+  font-size:clamp(15px,1.35vw,18px)!important;
+  line-height:1.3!important;
+  letter-spacing:-.025em;
+  color:#263a35!important;
+}
+.apex-site .apex-principle-grid p{
+  margin:0!important;
+  max-width:none!important;
+  font-size:13px!important;
+  line-height:1.75!important;
+  color:#53655d!important;
+}
+
+/* Service cards: natural height, readable copy, no content forced into a fixed box. */
+.apex-site .apex-service-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  align-items:stretch;
+}
+.apex-site .apex-service-card{
+  min-width:0;
+  min-height:360px;
+  height:auto;
+  padding:26px 23px 24px;
+  overflow:visible;
+}
+.apex-site .apex-service-card h3{
+  line-height:1.3;
+  overflow-wrap:normal;
+}
+.apex-site .apex-service-card>p{
+  min-height:0!important;
+  font-size:12px!important;
+  line-height:1.75!important;
+}
+.apex-site .apex-service-card li{
+  line-height:1.55;
+  overflow-wrap:anywhere;
+}
+
+/* The four-step explainer should wrap cleanly instead of squeezing its labels. */
+.apex-site .apex-process-visual{
+  min-width:0;
+  overflow:visible;
+  padding:26px;
+}
+.apex-site .apex-process-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  align-items:stretch;
+}
+.apex-site .apex-process-card{
+  min-width:0;
+  min-height:145px;
+  height:auto;
+  padding:15px 13px;
+  overflow:visible;
+}
+.apex-site .apex-process-card b{
+  font-size:13px;
+  line-height:1.35;
+  overflow-wrap:normal;
+}
+.apex-site .apex-process-card small{
+  font-size:10px;
+  line-height:1.55;
+}
+
+/* FAQ and two-column content: allow columns to shrink without clipping. */
+.apex-site .apex-intro-grid,
+.apex-site .apex-faq-grid,
+.apex-site .apex-system,
+.apex-site .apex-section-head{
+  min-width:0;
+}
+.apex-site .apex-intro-grid>*,
+.apex-site .apex-faq-grid>*,
+.apex-site .apex-system>*{min-width:0}
+.apex-site .apex-faq-list details{min-width:0}
+.apex-site .apex-faq-list summary{
+  align-items:flex-start;
+  line-height:1.55;
+}
+.apex-site .apex-faq-list details p{
+  font-size:12px!important;
+  line-height:1.75!important;
+}
+
+/* Contact and service subpages: prevent narrow form columns and clipped labels. */
+.inner-page,.contact-page,.services-page{min-width:0;overflow-x:clip}
+.contact-page .contact-page-layout,
+.contact-page .contact-form-wrap,
+.contact-page .contact-aside,
+.contact-page .contact-form{min-width:0;max-width:100%}
+.contact-page .contact-form input,
+.contact-page .contact-form select,
+.contact-page .contact-form textarea{width:100%;min-width:0;max-width:100%}
+.contact-page .contact-form label{line-height:1.5}
+.services-page .service-detail{
+  min-width:0;
+  height:auto;
+  align-items:start;
+}
+.services-page .service-detail-content{min-width:0}
+.services-page .service-detail p{font-size:13px!important;line-height:1.75!important}
+.services-page .service-detail li{line-height:1.55}
+
+/* Responsive cards: 2 columns on tablets, one column on phones. */
+@media(max-width:1050px){
+  .apex-site .apex-service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .apex-site .apex-principle-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .apex-site .apex-process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:700px){
+  .apex-site .apex-principle-grid{grid-template-columns:1fr;gap:13px}
+  .apex-site .apex-principle-grid article{min-height:0;padding:21px 20px 23px!important}
+  .apex-site .apex-principle-grid article>span{margin-bottom:12px}
+  .apex-site .apex-principle-grid h3{font-size:17px!important}
+  .apex-site .apex-principle-grid p{font-size:13px!important}
+  .apex-site .apex-service-grid{grid-template-columns:1fr}
+  .apex-site .apex-service-card{min-height:0;padding:23px 21px}
+  .apex-site .apex-process-visual{padding:18px 14px}
+  .apex-site .apex-process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .apex-site .apex-process-card{min-height:125px}
+  .apex-site .apex-section-head>p{max-width:100%}
+  .apex-site .apex-manifesto{line-height:1.16}
+}
+@media(max-width:390px){
+  .apex-site .apex-process-grid{grid-template-columns:1fr}
+  .apex-site .apex-process-card{min-height:0}
+  .apex-site .apex-hero-actions{gap:14px;flex-wrap:wrap}
+  .apex-site .apex-closing-foot{gap:12px;flex-wrap:wrap}
+}
