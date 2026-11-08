@@ -6,10 +6,8 @@ export default function PrivacyPage() {
     <a className="legal-back" href="/">← APEX CREATOR PARTNERS</a>
     <div className="section-label">LEGAL / PRIVACY</div>
     <h1>Privacy notice</h1>
-    <p className="legal-warning"></p>
     <h2>Controller</h2>
     <p><strong>Wang Ling</strong>, sole proprietor trading as APEX Creator Partners.</p>
-    <p>Flurstraße 31, 85232 Bergkirchen, Germany</p>
     <p>Contact: hello@apex-creator-partners.com</p>
     <h2>Contact enquiries</h2>
     <p>If you submit the contact form, the information you provide — including your name, email address, optional creator or brand details, selected platform and message — is processed to review and respond to your enquiry. Do not submit passwords, payment details or sensitive personal information.</p>
@@ -23,7 +21,6 @@ export default function PrivacyPage() {
     <p>Depending on the circumstances, you may have rights to access, rectification, erasure, restriction, objection and data portability. You may also lodge a complaint with a competent data protection supervisory authority.</p>
     <h2>Cookies and analytics</h2>
     <p>This notice does not confirm that analytics or non-essential cookies are absent. Update it if you enable analytics, tracking, embedded media or other third-party services.</p>
-    <p className="legal-small">This notice is a working draft and should be checked against the production website and actual data flows before publication. It is not legal advice.</p>
     <a className="text-arrow" href="/contact">Contact us ↗</a>
   </main>;
 }
