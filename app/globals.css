@@ -2067,3 +2067,80 @@ body{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe
  .agency-console-panel{animation:none}
  .agency-console-tab{transition:none}
 }
+
+
+/* Cohesive dark system for interactive sections and inner pages */
+.apex-editorial .apex-pathway-editorial{background:#101b26;color:#f4f7f8;border-top:1px solid #293a47;border-bottom:1px solid #293a47}
+.apex-editorial .apex-pathway-editorial .creator-pathway-heading h2{color:#f4f7f8}
+.apex-editorial .apex-pathway-editorial .creator-pathway-heading p,.apex-editorial .apex-pathway-editorial .creator-pathway-detail>p{color:#aab8c2}
+.apex-editorial .apex-pathway-editorial .creator-stage{background:#142331;border-color:#30414e;color:#dce5e9}
+.apex-editorial .apex-pathway-editorial .creator-stage:hover{background:#1a2c3a;border-color:#637888}
+.apex-editorial .apex-pathway-editorial .creator-stage.is-active{background:rgba(201,243,106,.09);border-color:rgba(201,243,106,.55)}
+.apex-editorial .apex-pathway-editorial .creator-stage-number,.apex-editorial .apex-pathway-editorial .creator-stage b{color:var(--apex-lime)}
+.apex-editorial .apex-pathway-editorial .creator-pathway-footnote,.apex-editorial .apex-pathway-editorial .creator-detail-top,.apex-editorial .apex-pathway-editorial .creator-detail-bottom{color:#91a2af}
+.apex-editorial .apex-pathway-editorial .creator-pathway-detail{background:#0b141d;border:1px solid #344957;color:#f4f7f8}
+.apex-editorial .apex-pathway-editorial .creator-pathway-detail h3{color:#f4f7f8}
+.apex-editorial .apex-pathway-editorial .creator-pathway-detail li{color:#cbd6dd}
+.apex-editorial .apex-pathway-editorial .creator-pathway-detail li span{color:var(--apex-lime)}
+.apex-editorial .apex-pathway-editorial .creator-detail-bottom a{color:var(--apex-lime)}
+.apex-editorial .apex-pathway-editorial .apex-channel-strip{border-color:#30414e}
+.apex-editorial .apex-pathway-editorial .apex-channel-intro h3{color:#f4f7f8}
+.apex-editorial .apex-pathway-editorial .apex-channel-intro p{color:#aab8c2}
+.apex-editorial .apex-pathway-editorial .apex-channel-item{border-color:#30414e;color:#f4f7f8}
+.apex-editorial .apex-pathway-editorial .apex-channel-item small{color:#91a2af}
+.apex-editorial .apex-pathway-editorial .apex-channel-item i{color:var(--apex-lime)}
+.apex-editorial .apex-pathway-editorial .apex-platform-disclaimer{color:#81929e}
+
+.services-page,.contact-page{background:#0b1118;color:#f4f7f8}
+.services-page .site-header,.contact-page .site-header{background:rgba(11,17,24,.92);border-color:#293a47}
+.services-page .wordmark-main,.contact-page .wordmark-main{color:#f4f7f8}
+.services-page .wordmark-sub,.contact-page .wordmark-sub{color:#91a2af}
+.services-page .desktop-nav a,.contact-page .desktop-nav a{color:#c1cbd2}
+.services-page .header-cta,.contact-page .header-cta{background:#17232e;border-color:#42515d;color:#f4f7f8}
+.services-page .header-cta span,.contact-page .header-cta span{color:#c9f36a}
+.services-page .services-hero,.contact-page .contact-page-hero{background:radial-gradient(ellipse at 78% 40%,rgba(44,91,125,.32),transparent 48%),#0d1721;color:#f4f7f8}
+.services-page .services-hero h1,.contact-page .contact-page-hero h1{color:#f4f7f8}
+.services-page .services-hero h1 em,.contact-page .contact-page-hero h1 em{font-family:inherit;font-style:normal;color:#c9f36a}
+.services-page .services-hero p,.contact-page .contact-page-hero p{color:#aab8c2}
+.services-page .section-label,.contact-page .section-label{color:#a0b0ba}
+.services-page .services-hero-note,.contact-page .contact-hero-points{color:#b8c5cd}
+.services-page .services-explainer{background:#142331;border-color:#30414e;color:#f4f7f8}
+.services-page .services-explainer strong{color:#f4f7f8}
+.services-page .services-explainer p{color:#aab8c2}
+.services-page .services-explainer a,.services-page .service-detail-link{color:#c9f36a}
+.services-page .service-detail{border-color:#30414e}
+.services-page .service-detail-number,.services-page .service-detail-icon{color:#c9f36a}
+.services-page .service-detail-content h2,.services-page .service-detail-content strong{color:#f4f7f8}
+.services-page .service-detail-content p,.services-page .service-detail-content li{color:#aab8c2}
+.services-page .service-detail-content li:before{color:#c9f36a}
+.services-page .services-end{background:#c9f36a;color:#101820}
+.services-page .services-end .section-label,.services-page .services-end p{color:#2d3e2c}
+.services-page .services-end h2,.services-page .services-end h2 em{color:#101820}
+.services-page .services-end .button-primary{background:#101820;color:#f4f7f8;border-color:#101820}
+.services-page .inner-footer,.contact-page .inner-footer{background:#080d12;border-color:#293a47;color:#91a2af}
+.services-page .inner-footer a,.contact-page .inner-footer a{color:#c9f36a}
+
+.contact-page .contact-page-layout{color:#f4f7f8}
+.contact-page .contact-form-wrap{background:#142331;border-color:#30414e;box-shadow:0 24px 70px rgba(0,0,0,.24)}
+.contact-page .form-heading,.contact-page .contact-form-intro p{color:#9eafba}
+.contact-page .contact-form-intro h2{color:#f4f7f8}
+.contact-page .contact-form label{color:#dbe4e9}
+.contact-page .contact-form input:not([type=checkbox]),.contact-page .contact-form select,.contact-page .contact-form textarea{background:#0c151e;border-color:#3a4e5d;color:#f4f7f8}
+.contact-page .contact-form input::placeholder,.contact-page .contact-form textarea::placeholder{color:#7f919e}
+.contact-page .contact-form input:focus,.contact-page .contact-form select:focus,.contact-page .contact-form textarea:focus{border-color:#c9f36a;box-shadow:0 0 0 3px rgba(201,243,106,.12)}
+.contact-page .contact-form .consent,.contact-page .contact-form .form-note{color:#aab8c2}
+.contact-page .contact-form .consent a{color:#c9f36a}
+.contact-page .contact-form .consent input{accent-color:#c9f36a}
+.contact-page .contact-form .form-status.success{background:#1c3327;color:#c9f36a;border-color:#3c6247}
+.contact-page .contact-form .form-status.error{background:#3a2424;color:#ffb3a4;border-color:#70413b}
+.contact-page .contact-aside-feature,.contact-page .contact-aside-steps,.contact-page .contact-direct{background:#142331;border-color:#30414e}
+.contact-page .contact-aside-feature h2{color:#f4f7f8}
+.contact-page .contact-aside-feature p,.contact-page .contact-aside-steps li span{color:#aab8c2}
+.contact-page .aside-label,.contact-page .contact-aside-steps li strong{color:#dce5e9}
+.contact-page .contact-aside-steps li{border-color:#30414e}
+.contact-page .contact-aside-steps li>b{color:#c9f36a}
+.contact-page .contact-direct a{color:#c9f36a}
+@media(max-width:760px){
+ .services-page .desktop-nav.nav-open,.contact-page .desktop-nav.nav-open{background:#101b26;border-color:#3b4d59}
+ .services-page .desktop-nav.nav-open a,.contact-page .desktop-nav.nav-open a{color:#f4f7f8}
+}
