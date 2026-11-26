@@ -14,14 +14,14 @@ export default function ContactPage() {
       <SiteHeader/>
       <section className="contact-page-hero">
         <div className="section-label"><span>YOUR NEXT STEP</span> / CONTACT</div>
-        <h1>Let’s talk about<br/><em>your goals.</em></h1>
-        <p>You do not need a perfect pitch or a business plan. Just tell us a little about where you are as a creator and what you would like help with. It takes around 3 minutes.</p>
+        <h1>Let’s explore<br/><em>a partnership.</em></h1>
+        <p>Tell us a little about your creator business, the platforms you use and the support you are looking for. We will review your enquiry and reply by email. It takes around 3 minutes.</p>
         <div className="contact-hero-points"><span><i/> Private enquiry</span><span><i/> No commitment</span><span><i/> 18+ creators only</span></div>
       </section>
 
       <section className="contact-page-layout">
         <div className="contact-form-wrap">
-          <div className="form-heading"><span>CREATOR ENQUIRY</span><span>ABOUT 3 MINUTES</span></div>
+          <div className="form-heading"><span>PARTNERSHIP APPLICATION</span><span>ABOUT 3 MINUTES</span></div>
           <div className="contact-form-intro"><h2>First, a little about you.</h2><p>Share only what you are comfortable sharing. Please do not send passwords, payment details or explicit content.</p></div>
           <ContactForm/>
         </div>
