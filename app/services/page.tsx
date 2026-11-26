@@ -47,10 +47,10 @@ export default function ServicesPage() {
     <main className="inner-page services-page">
       <SiteHeader/>
       <section className="services-hero">
-        <div className="section-label"><span>HOW WE CAN HELP</span> / SERVICES</div>
-        <h1>Creator management,<br/><em>built around you.</em></h1>
-        <p>From profile growth and promotion to chatting, fan management and the work behind the scenes, APEX brings the moving parts of your creator business into one considered partnership.</p>
-        <div className="services-hero-note"><span/> NO ONE-SIZE-FITS-ALL PACKAGES. WE START WITH YOUR GOALS.</div>
+        <div className="section-label"><span>ADULT CREATOR MANAGEMENT</span> / SERVICES</div>
+        <h1>Adult creator management,<br/><em>built around you.</em></h1>
+        <p>APEX works with independent adult-content creators aged 18+. From subscription-profile growth and promotion to chatting, fan management and business operations, we bring the moving parts of your creator business into one considered partnership.</p>
+        <div className="services-hero-note"><span/> INDEPENDENT ADULT CREATORS · 18+ ONLY · YOUR GOALS FIRST.</div>
       </section>
       <section className="services-explainer">
         <div className="services-explainer-icon"><ApexLogo/></div>
