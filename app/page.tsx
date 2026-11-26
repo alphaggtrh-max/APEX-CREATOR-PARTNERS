@@ -4,10 +4,10 @@ import { ApexLogo } from "./components/BrandLogos";
 import ScrollMotion from "./components/ScrollMotion";
 
 const services = [
-  { n: "01", title: "Brand & growth strategy", tag: "POSITIONING", copy: "A clearer direction for your creator brand, built around your audience, strengths and boundaries.", points: ["Creator positioning", "Audience and channel research", "A realistic growth roadmap"] },
-  { n: "02", title: "Audience development", tag: "DISCOVERY", copy: "A considered approach to visibility across the platforms and communities that make sense for you.", points: ["Platform strategy", "Content distribution", "Profile and funnel review"] },
-  { n: "03", title: "Content & monetization", tag: "REVENUE", copy: "Bring more intention to your content rhythm, subscription offer and the experience you create for fans.", points: ["Content planning", "Offer and pricing review", "Retention concepts"] },
-  { n: "04", title: "Business operations", tag: "STRUCTURE", copy: "Practical support for the systems and decisions behind a creator-led business.", points: ["Workflow setup", "Performance check-ins", "Operational coordination"] },
+  { n: "01", title: "Strategy & positioning", tag: "DIRECTION", copy: "A clear plan for your creator brand, audience and next stage — shaped around your goals and boundaries.", points: ["Creator positioning", "Audience and channel strategy", "A practical growth roadmap"] },
+  { n: "02", title: "Promotion & audience growth", tag: "DISCOVERY", copy: "Connect your social presence and subscription profiles with a more intentional promotion strategy.", points: ["Social platform planning", "Content distribution", "Profile and funnel optimisation"] },
+  { n: "03", title: "Content & fan experience", tag: "ENGAGEMENT", copy: "Build a consistent content rhythm and a thoughtful subscriber experience across your platforms.", points: ["Content planning", "Chatting and fan management", "Subscriber experience"] },
+  { n: "04", title: "Business & account management", tag: "OPERATIONS", copy: "Practical day-to-day support that helps keep your creator business organised and moving.", points: ["Profile and account support", "Admin and workflow coordination", "Analytics and performance reviews"] },
 ];
 
 const principles = [
@@ -34,13 +34,13 @@ export default function Home() {
     <section className="apex-hero apex-editorial-hero">
       <div className="apex-hero-copy">
         <div className="apex-eyebrow"><i/> AGENCY PARTNERSHIP FOR INDEPENDENT CREATORS</div>
-        <h1>Make your creator business <em>work harder.</em></h1>
-        <p>Strategy, audience development and business support for adult creators who want to grow with more clarity, control and intention.</p>
+        <h1>Your creator business.<br/><em>Managed with intention.</em></h1>
+        <p>A considered management partnership for adult creators — bringing strategy, promotion, content, fan experience and day-to-day operations together.</p>
         <div className="apex-hero-actions">
-          <a className="apex-button apex-button-primary" href="/contact">Discuss a partnership <span>↗</span></a>
+          <a className="apex-button apex-button-primary" href="/contact">Apply for management <span>↗</span></a>
           <a className="apex-text-link" href="#services">Explore what we do <span>↓</span></a>
         </div>
-        <div className="apex-hero-note"><span/> INDEPENDENT. DISCREET. BUILT AROUND YOU.</div>
+        <div className="apex-hero-note"><span/> CREATOR-FIRST. DISCREET. BUILT AROUND YOU.</div>
       </div>
       <div className="apex-editorial-visual creator-studio-visual" aria-label="A visual preview of the APEX creator content studio approach">
         <div className="creator-studio-top"><span><i/> APEX / CREATOR STUDIO</span><span>STRATEGY IN MOTION</span></div>
@@ -55,7 +55,7 @@ export default function Home() {
       <div className="apex-hero-index">APEX <span>—</span> 01</div>
     </section>
 
-    <div className="apex-proofline"><span>CREATOR-LED</span><i>✳</i><span>18+ ONLY</span><i>✳</i><span>NO REVENUE GUARANTEES</span><i>✳</i><span>YOUR ACCOUNTS STAY YOURS</span></div>
+    <div className="apex-proofline"><span>CREATOR-FIRST</span><i>✳</i><span>18+ ONLY</span><i>✳</i><span>AGREED SCOPE & FEES</span><i>✳</i><span>YOUR ACCOUNTS STAY YOURS</span></div>
 
     <div id="creator-pathway"><CreatorPathway/></div>
 
@@ -68,12 +68,12 @@ export default function Home() {
     </section>
 
     <section className="apex-services apex-section" id="services">
-      <div className="apex-section-head"><div><div className="apex-section-kicker">02 / WHAT WE DO</div><h2>Built around the<br/><em>business behind you.</em></h2></div><p>Focused support across the areas that shape a sustainable creator business. The right scope starts with your goals.</p></div>
+      <div className="apex-section-head"><div><div className="apex-section-kicker">02 / WHAT WE DO</div><h2>Built around the<br/><em>business behind you.</em></h2></div><p>From growth and promotion to fan experience and operations, support is agreed around your priorities — not a one-size-fits-all package.</p></div>
       <div className="apex-service-grid">{services.map(s=><article className="apex-service-card" key={s.n}><div className="apex-service-meta"><span>{s.n} / 04</span><span>{s.tag}</span></div><div className="apex-service-symbol">{s.n === "01" ? "↗" : s.n === "02" ? "◎" : s.n === "03" ? "✳" : "⌘"}</div><h3>{s.title}</h3><p>{s.copy}</p><ul>{s.points.map(p=><li key={p}>{p}</li>)}</ul><a href="/contact">Explore this service <span>↗</span></a></article>)}</div>
     </section>
 
     <section className="apex-system apex-section" id="system">
-      <div className="apex-system-copy"><div className="apex-section-kicker">03 / THE PARTNERSHIP</div><h2>Clear from<br/><em>day one.</em></h2><p>No mystery process and no one-size-fits-all package. We start with a conversation, agree on the work and keep communication open as things develop.</p><a className="apex-button apex-button-outline" href="/contact">Start a conversation <span>↗</span></a><small>YOUR GOALS SET THE DIRECTION.</small></div>
+      <div className="apex-system-copy"><div className="apex-section-kicker">03 / THE PARTNERSHIP</div><h2>Clear from<br/><em>day one.</em></h2><p>You stay at the centre of the business. We agree the scope, responsibilities and fees before work begins, then keep communication clear as the partnership develops.</p><a className="apex-button apex-button-outline" href="/contact">Start a conversation <span>↗</span></a><small>YOUR GOALS SET THE DIRECTION.</small></div>
       <div className="apex-process-visual" aria-label="Four steps in the APEX working process">
         <div className="apex-visual-top"><span>HOW WE WORK</span><span>FOUR CLEAR STEPS</span></div>
         <div className="apex-process-line"><i/><i/><i/><i/></div>
@@ -88,7 +88,7 @@ export default function Home() {
 
     <section className="apex-faq apex-section" id="faq"><div className="apex-section-kicker">05 / GOOD TO KNOW</div><div className="apex-faq-grid"><div><h2>Before we<br/><em>get started.</em></h2><p>A few straightforward answers about working with APEX.</p><a className="apex-inline-link" href="/contact">Have another question? <span>↗</span></a></div><div className="apex-faq-list">{faqs.map(([q,a])=><details key={q}><summary>{q}<span>+</span></summary><p>{a}</p></details>)}</div></div></section>
 
-    <section className="apex-closing"><div className="apex-closing-orb"/><div className="apex-section-kicker">06 / LET’S TALK</div><h2>Ready to take your<br/><em>next step?</em></h2><p>Tell us where you are, what you are building and what kind of support would make a difference. We will take it from there.</p><a className="apex-button apex-button-light" href="/contact">Enquire about working together <span>↗</span></a><div className="apex-closing-foot"><span>APEX CREATOR PARTNERS</span><span>YOUR NEXT CHAPTER, BY DESIGN.</span></div></section>
+    <section className="apex-closing"><div className="apex-closing-orb"/><div className="apex-section-kicker">06 / LET’S TALK</div><h2>Ready to take your<br/><em>next step?</em></h2><p>Tell us about your creator business and the support you are looking for. We will review your enquiry and discuss whether a partnership makes sense.</p><a className="apex-button apex-button-light" href="/contact">Apply for a partnership <span>↗</span></a><div className="apex-closing-foot"><span>APEX CREATOR PARTNERS</span><span>YOUR NEXT CHAPTER, BY DESIGN.</span></div></section>
 
     <footer className="apex-footer"><div className="apex-footer-main"><a className="apex-footer-brand" href="/"><ApexLogo className="apex-footer-logo"/><b>APEX<span>.</span></b><small>CREATOR PARTNERS</small></a><p>Independent creators.<br/>A more intentional way forward.</p><nav><a href="#services">Services</a><a href="#system">How we work</a><a href="#about">Our approach</a><a href="#faq">FAQ</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/imprint">Imprint</a></nav><a className="apex-footer-email" href="mailto:hello@apex-creator-partners.com">hello@apex-creator-partners.com ↗</a></div><div className="apex-footer-bottom"><span>© 2026 APEX Creator Partners</span><span>18+ · Independent creator management</span><a href="#top">BACK TO TOP ↑</a></div></footer>
   </main>;
