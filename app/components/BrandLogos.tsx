@@ -104,3 +104,17 @@ export function XLogo(props: IconProps) {
     </svg>
   );
 }
+
+
+/** Simple platform wordmarks for subscription services without a custom icon asset. */
+export function FanvueLogo(props: IconProps) {
+  return <svg viewBox="0 0 48 48" aria-hidden="true" {...props}><rect width="48" height="48" rx="14" fill="#17152f"/><path d="M13 34V14h22v5H19v4h13v5H19v6Z" fill="#fff"/><circle cx="34" cy="33" r="3" fill="#8b79ff"/></svg>;
+}
+
+export function ManyVidsLogo(props: IconProps) {
+  return <svg viewBox="0 0 48 48" aria-hidden="true" {...props}><rect width="48" height="48" rx="14" fill="#1c1c1c"/><path d="m9 33 5-18h5l5 10 5-10h5l5 18h-6l-2-9-5 9h-4l-5-9-2 9Z" fill="#f5c342"/></svg>;
+}
+
+export function LoyalFansLogo(props: IconProps) {
+  return <svg viewBox="0 0 48 48" aria-hidden="true" {...props}><rect width="48" height="48" rx="14" fill="#27213d"/><path d="M14 13h6v17h14v5H14Z" fill="#fff"/><path d="M29 13h6v7h-6z" fill="#a58bff"/></svg>;
+}
