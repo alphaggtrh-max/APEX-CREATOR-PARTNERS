@@ -144,10 +144,31 @@ button,a{-webkit-tap-highlight-color:transparent}
 .apex-footer-bottom{display:flex;justify-content:space-between;gap:15px;margin-top:45px;padding-top:15px;border-top:1px solid #ffffff20;color:#8292a9;font:8px var(--mono);letter-spacing:.08em}
 .apex-footer-bottom a{color:#c3cddd}
 .apex-scroll-progress{position:fixed;top:0;left:0;width:100%;height:2px;z-index:100;pointer-events:none}
-.apex-scroll-progress span{display:block;width:calc(var(--apex-scroll-progress,0)*100%);height:100%;background:var(--blue)}
-.apex-reveal{opacity:1;transform:none;transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1);transition-delay:var(--reveal-delay,0ms)}
-.has-motion .apex-reveal{opacity:0;transform:translateY(18px)}
-.has-motion .apex-reveal.is-in-view{opacity:1;transform:none}
+.apex-scroll-progress span{display:block;width:100%;height:100%;background:var(--blue);transform:scaleX(var(--apex-scroll-progress,0));transform-origin:left center;will-change:transform}
+
+/* Motion system: short, transform/opacity-only effects. Tune reveal timing here. */
+.apex-reveal{opacity:1;transform:translate3d(0,0,0);transition:opacity .58s ease,transform .58s cubic-bezier(.22,.68,.2,1);transition-delay:var(--reveal-delay,0ms)}
+.has-motion .apex-reveal{opacity:0;transform:translate3d(0,20px,0)}
+.has-motion .apex-reveal.is-in-view{opacity:1;transform:translate3d(0,0,0)}
+.agency-console{transform:translate3d(0,var(--console-parallax,0px),0);transition:transform .18s linear,box-shadow .3s ease,border-color .3s ease}
+.agency-console:hover{box-shadow:0 32px 82px rgba(36,56,96,.17);border-color:#c9d4f4}
+.apex-button,.button,.header-cta{will-change:transform}
+.apex-button:active,.button:active,.header-cta:active{transform:translateY(0) scale(.985)}
+.apex-service-card,.apex-principle-grid article,.apex-channel-item,.creator-pathway-detail,.contact-aside-feature,.contact-aside-steps{transition:transform .28s cubic-bezier(.2,.7,.2,1),box-shadow .28s ease,border-color .28s ease}
+.apex-service-card:hover,.apex-principle-grid article:hover{transform:translateY(-5px);box-shadow:0 18px 45px rgba(22,39,68,.09)}
+.apex-channel-item:hover{transform:translateY(-3px)}
+/* App Router template remounts on navigation; this gives each route a quiet entrance. */
+.route-transition{animation:apex-route-enter .42s cubic-bezier(.22,.68,.2,1) both}
+@keyframes apex-route-enter{from{opacity:.0;transform:translate3d(0,8px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+@media(max-width:760px){
+ .agency-console{transform:none!important;transition:box-shadow .25s ease,border-color .25s ease}
+ .apex-reveal{transition-duration:.45s}
+}
+@media(prefers-reduced-motion:reduce){
+ .route-transition{animation:none}
+ .apex-reveal,.has-motion .apex-reveal{opacity:1!important;transform:none!important;transition:none!important}
+ .agency-console{transform:none!important;transition:none!important}
+}
 
 /* Interactive capability console */
 .agency-console{width:100%;max-width:650px;justify-self:end;position:relative;padding:25px;background:#fff;border:1px solid #dce3f0;border-radius:10px;box-shadow:0 28px 75px rgba(36,56,96,.14);color:var(--ink)}
