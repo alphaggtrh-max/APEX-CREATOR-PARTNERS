@@ -52,8 +52,8 @@ export default function AgencyConsole() {
   return (
     <section className="agency-console" aria-label="Explore APEX core capabilities">
       <div className="agency-console-top">
-        <span><i /> APEX MANAGEMENT SYSTEM</span>
-        <span>CORE CAPABILITIES <b>04</b></span>
+        <span><i /> APEX / MANAGEMENT PARTNER</span>
+        <span>FOUR CORE AREAS <b>04</b></span>
       </div>
       <div className="agency-console-heading">
         <span className="agency-console-kicker">ONE CONNECTED PARTNERSHIP</span>
@@ -81,7 +81,7 @@ export default function AgencyConsole() {
           ))}
         </div>
         <div className="agency-console-panel" id="capability-panel" role="tabpanel" aria-labelledby={`capability-tab-${active.id}`} key={active.id}>
-          <div className="agency-console-panel-meta"><span>CAPABILITY / {active.number}</span><span>APEX FRAMEWORK</span></div>
+          <div className="agency-console-panel-meta"><span>CAPABILITY / {active.number}</span><span>HOW WE SUPPORT</span></div>
           <h3>{active.title}</h3>
           <p>{active.description}</p>
           <ul>{active.actions.map((action) => <li key={action}><span>+</span>{action}</li>)}</ul>
@@ -91,8 +91,8 @@ export default function AgencyConsole() {
         </div>
       </div>
       <div className="agency-console-bottom">
-        <span><i /> BUILT AROUND YOUR GOALS</span>
-        <span>18+ ONLY · INDEPENDENT CREATOR MANAGEMENT</span>
+        <span><i /> YOUR BUSINESS. YOUR DIRECTION.</span>
+        <span>CLEAR SCOPE · AGREED RESPONSIBILITIES</span>
       </div>
       <p className="agency-console-disclaimer">An overview of APEX services — the actual scope is agreed individually before work begins.</p>
     </section>
