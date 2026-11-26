@@ -42,12 +42,15 @@ export default function Home() {
         </div>
         <div className="apex-hero-note"><span/> INDEPENDENT. DISCREET. BUILT AROUND YOU.</div>
       </div>
-      <div className="apex-editorial-visual" aria-label="APEX Creator Partners brand statement">
-        <div className="editorial-visual-top"><span>APEX / CREATOR PARTNERS</span><span>18+</span></div>
-        <div className="editorial-visual-mark"><ApexLogo className="editorial-apex-logo"/></div>
-        <div className="editorial-visual-copy"><span>YOUR BRAND.</span><strong>YOUR<br/><em>NEXT</em><br/>CHAPTER.</strong></div>
-        <div className="editorial-visual-bottom"><span>STRATEGY WITH INTENTION</span><span>EST. 2026</span></div>
-        <div className="editorial-visual-stamp">CREATOR<br/>FIRST</div>
+      <div className="apex-editorial-visual creator-studio-visual" aria-label="A visual preview of the APEX creator content studio approach">
+        <div className="creator-studio-top"><span><i/> APEX / CREATOR STUDIO</span><span>STRATEGY IN MOTION</span></div>
+        <div className="creator-studio-heading"><span>THE CREATOR ECOSYSTEM</span><strong>Make every<br/><em>piece connect.</em></strong><p>One clear direction across content, audience and community.</p></div>
+        <div className="creator-studio-board">
+          <div className="studio-tile studio-tile-feature"><span>01 / CONTENT</span><strong>CREATE<br/><em>with purpose.</em></strong><small>Ideas shaped around your voice.</small><b className="studio-play">▶</b></div>
+          <div className="studio-tile studio-tile-social"><span>02 / DISCOVERY</span><div className="studio-social-mark">↗</div><strong>Find your<br/>people.</strong><small>Reach · Relevance · Rhythm</small></div>
+          <div className="studio-tile studio-tile-community"><span>03 / COMMUNITY</span><div className="studio-community-orbit"><i/><i/><i/></div><strong>Build<br/>connection.</strong><small>Beyond the scroll.</small></div>
+        </div>
+        <div className="creator-studio-bottom"><span>CONTENT × GROWTH × OPERATIONS</span><span>18+ · CREATOR FIRST</span></div>
       </div>
       <div className="apex-hero-index">APEX <span>—</span> 01</div>
     </section>
