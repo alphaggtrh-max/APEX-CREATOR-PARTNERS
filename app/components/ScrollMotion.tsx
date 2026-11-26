@@ -9,7 +9,7 @@ export default function ScrollMotion() {
 
     root.classList.add("has-motion");
     const targets = root.querySelectorAll(
-      ".apex-editorial-hero .apex-hero-copy > *, .apex-editorial-visual, .apex-pathway-editorial .creator-pathway-heading, .apex-pathway-editorial .creator-pathway-layout, .apex-channel-strip, .apex-section-kicker, .apex-intro-grid, .apex-section-head, .apex-service-card, .apex-system-copy, .apex-process-visual, .apex-manifesto, .apex-principle-grid article, .apex-faq-grid > div, .apex-closing > *"
+      ".apex-editorial-hero .apex-hero-copy > *, .agency-console, .apex-pathway-editorial .creator-pathway-heading, .apex-pathway-editorial .creator-pathway-layout, .apex-channel-strip, .apex-section-kicker, .apex-intro-grid, .apex-section-head, .apex-service-card, .apex-system-copy, .apex-process-visual, .apex-manifesto, .apex-principle-grid article, .apex-faq-grid > div, .apex-closing > *"
     );
 
     const observer = new IntersectionObserver((entries) => {
