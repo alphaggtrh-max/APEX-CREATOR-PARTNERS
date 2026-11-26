@@ -2,7 +2,6 @@ import SiteHeader from "./components/SiteHeader";
 import CreatorPathway from "./components/CreatorPathway";
 import AgencyConsole from "./components/AgencyConsole";
 import { ApexLogo } from "./components/BrandLogos";
-import ScrollMotion from "./components/ScrollMotion";
 
 const services = [
   { n: "01", title: "Strategy & positioning", tag: "DIRECTION", copy: "A clear plan for your creator brand, audience and next stage — shaped around your goals and boundaries.", points: ["Creator positioning", "Audience and channel strategy", "A practical growth roadmap"] },
@@ -28,7 +27,7 @@ const faqs = [
 
 export default function Home() {
   return <main id="top" className="apex-site apex-editorial">
-    <ScrollMotion/>
+
     <div className="apex-topline"><span>ADULT CREATOR MANAGEMENT</span><span>STRATEGY · GROWTH · OPERATIONS</span><span>18+ ONLY</span></div>
     <SiteHeader/>
 
