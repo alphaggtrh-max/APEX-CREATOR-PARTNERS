@@ -15,8 +15,8 @@ export default function SiteHeader() {
         </span>
       </a>
       <nav className={"desktop-nav" + (open ? " nav-open" : "")} aria-label="Main navigation">
-        <a href="/#services" onClick={() => setOpen(false)}>Services</a>
-        <a href="/#system" onClick={() => setOpen(false)}>Partnership</a>
+        <a href="/#services" onClick={() => setOpen(false)}>Capabilities</a>
+        <a href="/#system" onClick={() => setOpen(false)}>How we work</a>
         <a href="/#about" onClick={() => setOpen(false)}>About</a>
         <a href="/#faq" onClick={() => setOpen(false)}>FAQ</a>
         <a className="mobile-nav-contact" href="/contact" onClick={() => setOpen(false)}>Apply now ↗</a>
