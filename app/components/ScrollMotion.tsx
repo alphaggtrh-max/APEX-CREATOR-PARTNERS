@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 export default function ScrollMotion() {
   useEffect(() => {
-    const root = document.querySelector(".apex-editorial");
+    const root = document.querySelector(".apex-editorial, .inner-page, .legal-page");
     if (!root) return;
 
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -15,7 +15,7 @@ export default function ScrollMotion() {
     // only enabled when the observer is available and motion is permitted.
     root.classList.add("has-motion");
     const targets = root.querySelectorAll(
-      ".apex-editorial-hero .apex-hero-copy > *, .agency-console, .apex-pathway-editorial .creator-pathway-heading, .apex-pathway-editorial .creator-pathway-layout, .apex-channel-strip, .apex-section-kicker, .apex-intro-grid, .apex-section-head, .apex-service-card, .apex-system-copy, .apex-process-visual, .apex-manifesto, .apex-principle-grid article, .apex-faq-grid > div, .apex-closing > *"
+      ".apex-editorial-hero .apex-hero-copy > *, .agency-console, .apex-pathway-editorial .creator-pathway-heading, .apex-pathway-editorial .creator-pathway-layout, .apex-channel-strip, .apex-section-kicker, .apex-intro-grid, .apex-section-head, .apex-service-card, .apex-system-copy, .apex-process-visual, .apex-manifesto, .apex-principle-grid article, .apex-faq-grid > div, .apex-closing > *, .services-hero > *, .services-explainer > *, .service-detail, .services-end > *, .contact-page-hero > *, .contact-form-wrap, .contact-aside > *, .legal-page > *"
     );
 
     const observer = new IntersectionObserver((entries) => {
