@@ -1498,3 +1498,156 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
  .apex-editorial *, .apex-scroll-progress span{animation:none!important;transition:none!important;scroll-behavior:auto!important}
  .apex-editorial.has-motion .apex-reveal{opacity:1!important;transform:none!important;filter:none!important}
 }
+
+
+/* ===== APEX creator-studio refresh ===== */
+.apex-editorial{
+  --bg:#f8f7f3;--paper:#fffefa;--ink:#263a35;--body:#596b63;
+  --sage:#dfe9df;--sage-deep:#315b4b;--coral:#b96853;--coral-soft:#f1e1d9;
+  background:var(--bg);color:var(--ink)
+}
+.apex-editorial .apex-topline{background:#263a35;color:#dce6df}
+.apex-editorial .site-header{background:rgba(248,247,243,.94);border-color:rgba(38,58,53,.12)}
+.apex-editorial .wordmark-main,.apex-editorial .apex-hero h1{color:var(--ink)}
+.apex-editorial .wordmark-mark{color:var(--coral)}
+.apex-editorial .desktop-nav a,.apex-editorial .header-cta{color:#53665d}
+.apex-editorial .header-cta{border-color:#cbd5cd;background:#fffefa}
+.apex-editorial .header-cta span,.apex-editorial .apex-text-link span{color:var(--coral)}
+.apex-editorial .apex-editorial-hero{background:linear-gradient(115deg,#f8f7f3 0%,#f3f5ef 58%,#e9eee7 100%)}
+.apex-editorial .apex-eyebrow{color:#66766d}
+.apex-editorial .apex-eyebrow i{background:var(--coral);box-shadow:0 0 0 5px rgba(185,104,83,.12)}
+.apex-editorial .apex-hero-copy>p{color:var(--body)}
+.apex-editorial .apex-button-primary{background:#263a35;color:#fff}
+.apex-editorial .apex-button-primary:hover{background:#36594a}
+.apex-editorial .apex-hero-note{color:#75847b}
+.apex-editorial .apex-hero-note span{background:var(--coral)}
+.apex-editorial .apex-proofline{background:#e8eee7;border-color:#d7e0d6;color:#50665b}
+.apex-editorial .apex-proofline i{color:var(--coral)}
+.apex-editorial .apex-section-kicker{color:#75847b}
+.apex-editorial .apex-section h2,.apex-editorial .apex-intro h2{color:var(--ink)}
+.apex-editorial .apex-section h2 em,.apex-editorial .apex-intro h2 em{color:var(--coral)}
+.apex-editorial .apex-intro,.apex-editorial .apex-system,.apex-editorial .apex-faq{background:#fbfaf7}
+.apex-editorial .apex-lead{color:#354c42}
+.apex-editorial .apex-intro-grid p:not(.apex-lead),.apex-editorial .apex-system-copy>p,.apex-editorial .apex-faq-grid>div:first-child>p{color:var(--body)}
+.apex-editorial .apex-inline-link{color:#315b4b;border-color:#b9c9bc}
+.apex-editorial .apex-services,.apex-editorial .apex-principles{background:#edf1eb;border-color:#dce5dc}
+.apex-editorial .apex-section-head>p{color:var(--body)}
+.apex-editorial .apex-service-grid{background:#d8e1d8;border-color:#d8e1d8}
+.apex-editorial .apex-service-card{background:#fbfaf7}
+.apex-editorial .apex-service-card:hover{background:#fff;box-shadow:0 18px 36px rgba(38,58,53,.08)}
+.apex-editorial .apex-service-meta{color:#718278}
+.apex-editorial .apex-service-symbol{color:#a95e4b;background:#f2e6df;border-color:#ead5ca}
+.apex-editorial .apex-service-card h3,.apex-editorial .apex-principle-grid h3{color:var(--ink)}
+.apex-editorial .apex-service-card>p,.apex-editorial .apex-service-card li,.apex-editorial .apex-principle-grid p{color:var(--body)}
+.apex-editorial .apex-service-card li:before{color:var(--coral)}
+.apex-editorial .apex-service-card>a,.apex-editorial .apex-principle-grid article>span{color:#a95e4b}
+.apex-editorial .apex-button-outline{border-color:#9aafa0;color:#315b4b}
+.apex-editorial .apex-button-outline:hover{background:#315b4b;color:#fff}
+.apex-editorial .apex-process-visual{background:#263a35;border-color:#3c5a4d;box-shadow:0 24px 55px rgba(38,58,53,.13)}
+.apex-editorial .apex-visual-top,.apex-editorial .apex-visual-bottom{color:#c3d3c8}
+.apex-editorial .apex-process-line{background:#60786a}
+.apex-editorial .apex-process-line i{background:#d28a70;box-shadow:0 0 0 5px rgba(210,138,112,.14)}
+.apex-editorial .apex-process-card{background:#304a3e;border-color:#526c5e}
+.apex-editorial .apex-process-card>span,.apex-editorial .apex-process-card>i{color:#e2a18a}
+.apex-editorial .apex-process-card b{color:#f5f6ef}
+.apex-editorial .apex-process-card small{color:#c6d2c9!important}
+.apex-editorial .apex-process-card:hover{background:#3b5a49;border-color:#8ca393}
+.apex-editorial .apex-principle-grid article{background:#fbfaf7!important;border-color:#dce5dc!important;border-top-color:#9aafa0!important}
+.apex-editorial .apex-manifesto{color:var(--ink)}
+.apex-editorial .apex-manifesto em{color:var(--coral)}
+.apex-editorial .apex-faq-list details{border-color:#dce3dc}
+.apex-editorial .apex-faq-list summary{color:var(--ink)}
+.apex-editorial .apex-faq-list summary span{color:var(--coral)}
+.apex-editorial .apex-faq-list details p{color:var(--body)}
+.apex-editorial .apex-closing{background:linear-gradient(125deg,#263a35,#1e302b 78%);color:#f7f7f0}
+.apex-editorial .apex-closing-orb{border-color:rgba(194,213,199,.22);box-shadow:0 0 0 45px rgba(194,213,199,.035),0 0 0 90px rgba(194,213,199,.02)}
+.apex-editorial .apex-closing .apex-section-kicker{color:#c2d4c7}
+.apex-editorial .apex-closing h2{color:#f7f7f0}
+.apex-editorial .apex-closing h2 em{color:#e3a087!important;-webkit-text-fill-color:#e3a087!important}
+.apex-editorial .apex-closing>p{color:#d0ddd3}
+.apex-editorial .apex-button-light{background:#f2f4ed;color:#263a35}
+.apex-editorial .apex-button-light span{color:var(--coral)}
+.apex-editorial .apex-closing-foot{border-color:rgba(255,255,255,.18);color:#c6d5ca}
+.apex-editorial .apex-footer{background:#1e302b;color:#edf2ec}
+.apex-editorial .apex-footer-main>p,.apex-editorial .apex-footer nav a,.apex-editorial .apex-footer-bottom{color:#c2d0c6}
+.apex-editorial .apex-footer-brand b{color:#fff}
+.apex-editorial .apex-footer-brand small{color:#b9cbbf}
+.apex-editorial .apex-footer-email{color:#e3a087}
+.apex-pathway-editorial{background:#e9eee7;border-color:#d8e2d8}
+.apex-pathway-editorial .creator-pathway-heading h2{color:var(--ink)}
+.apex-pathway-editorial .creator-pathway-heading h2 em,.apex-channel-intro h3 em{color:var(--coral)}
+.apex-pathway-editorial .creator-pathway-heading>p,.apex-pathway-editorial .creator-pathway-detail>p{color:var(--body)}
+.apex-pathway-editorial .creator-stage{background:#f8f8f3;border-color:#d4dfd4;color:#42574b}
+.apex-pathway-editorial .creator-stage.is-active{background:#315b4b;border-color:#315b4b;color:#fff}
+.apex-pathway-editorial .creator-stage-number,.apex-pathway-editorial .creator-stage b{color:#a95e4b}
+.apex-pathway-editorial .creator-stage.is-active .creator-stage-number{color:#e7ad96}
+.apex-pathway-editorial .creator-pathway-footnote{color:#75847b}
+.apex-pathway-editorial .creator-pathway-detail{background:#fbfaf7;border-color:#d4dfd4}
+.apex-pathway-editorial .creator-detail-top{color:#a95e4b}
+.apex-pathway-editorial .creator-pathway-detail h3{color:var(--ink)}
+.apex-pathway-editorial .creator-pathway-detail li{color:#53665d}
+.apex-pathway-editorial .creator-pathway-detail li span{color:var(--coral)}
+.apex-pathway-editorial .creator-detail-bottom{border-color:#dce5dc}
+.apex-pathway-editorial .creator-detail-bottom>a{color:#315b4b}
+.apex-channel-strip{border-color:#d1ddd2}
+.apex-channel-intro h3{color:var(--ink)}
+.apex-channel-intro p{color:var(--body)}
+.apex-channel-list{border-color:#d1ddd2}
+.apex-channel-item{border-color:#d1ddd2}
+.apex-channel-logo{background:#dce8dc;color:#315b4b}
+.apex-channel-item b{color:var(--ink)}
+.apex-channel-item small,.apex-platform-disclaimer{color:#718078}
+.apex-channel-item>i{color:var(--coral)}
+.apex-scroll-progress{background:rgba(49,91,75,.08)}
+.apex-scroll-progress span{background:linear-gradient(90deg,#315b4b,#8ca393,#b96853)}
+.apex-editorial .apex-section:before{background:linear-gradient(90deg,transparent,rgba(49,91,75,.16),transparent)}
+.apex-editorial .apex-principles:after{color:rgba(49,91,75,.035)}
+.apex-editorial .apex-footer:before{background:linear-gradient(90deg,#263a35,#8ca393,#b96853,#263a35)}
+.apex-editorial .apex-editorial-hero:after{background:radial-gradient(ellipse at 50% 0%,rgba(130,157,135,.13),transparent 68%)}
+
+/* Hero visual: a restrained content-studio board instead of a decorative brand poster */
+.apex-editorial .creator-studio-visual{
+  min-height:510px;padding:25px 27px 21px;gap:0;color:#f6f6ef;
+  background:linear-gradient(145deg,#263a35 0%,#304b3e 72%,#263a35 100%);
+  box-shadow:0 26px 65px rgba(38,58,53,.14);border:1px solid rgba(255,255,255,.08)
+}
+.apex-editorial .creator-studio-visual:before{width:390px;height:390px;right:-155px;top:90px;border-color:rgba(220,235,221,.13);box-shadow:0 0 0 38px rgba(220,235,221,.025),0 0 0 78px rgba(220,235,221,.018)}
+.apex-editorial .creator-studio-visual:after{display:none}
+.creator-studio-top,.creator-studio-bottom{position:relative;z-index:1;display:flex;justify-content:space-between;gap:12px;font:8px var(--mono);letter-spacing:.14em;color:#c5d5c9}
+.creator-studio-top>span:first-child{display:flex;align-items:center;gap:9px}
+.creator-studio-top i{width:7px;height:7px;border-radius:50%;background:#d58a70;box-shadow:0 0 0 4px rgba(213,138,112,.14)}
+.creator-studio-heading{position:relative;z-index:1;margin:35px 0 24px}
+.creator-studio-heading>span{font:8px var(--mono);letter-spacing:.18em;color:#d99a80}
+.creator-studio-heading strong{display:block;margin-top:11px;font-size:clamp(32px,4vw,48px);line-height:.98;letter-spacing:-.065em;color:#f7f7ef}
+.creator-studio-heading strong em{font-family:'Playfair Display',Georgia,serif;font-weight:500;color:#e5a187}
+.creator-studio-heading p{font-size:11px;line-height:1.6;color:#c4d2c8;margin:12px 0 0;max-width:270px}
+.creator-studio-board{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .9fr .9fr;gap:9px;min-height:166px}
+.studio-tile{position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;min-width:0;padding:13px;border:1px solid rgba(255,255,255,.15);background:#f0e6dc;color:#263a35}
+.studio-tile>span{position:absolute;top:12px;left:12px;font:7px var(--mono);letter-spacing:.1em;color:#65766c}
+.studio-tile strong{font-size:clamp(15px,1.7vw,21px);line-height:1.03;letter-spacing:-.045em}
+.studio-tile strong em{font-family:'Playfair Display',Georgia,serif;color:#b96853;font-weight:500}
+.studio-tile small{font-size:8px;line-height:1.45;color:#63746a;margin-top:8px}
+.studio-tile-feature{background:linear-gradient(145deg,#f1e2d7,#e7d2c4)}
+.studio-tile-feature:after{content:"";position:absolute;width:100px;height:100px;border:1px solid rgba(185,104,83,.35);border-radius:50%;right:-36px;top:30px;box-shadow:0 0 0 14px rgba(185,104,83,.06),0 0 0 28px rgba(185,104,83,.04)}
+.studio-play{position:absolute;right:14px;bottom:14px;width:25px;height:25px;border-radius:50%;display:grid;place-items:center;background:#315b4b;color:#fff;font-size:8px}
+.studio-tile-social{background:linear-gradient(145deg,#dce8dd,#cbdccf)}
+.studio-social-mark{position:absolute;right:13px;top:43px;font-size:36px;color:#7d9b83;transform:rotate(-12deg)}
+.studio-tile-community{background:linear-gradient(145deg,#e7e6d9,#d9dfcf)}
+.studio-community-orbit{position:absolute;right:10px;top:38px;width:56px;height:56px;border:1px solid rgba(49,91,75,.3);border-radius:50%}
+.studio-community-orbit:before,.studio-community-orbit:after{content:"";position:absolute;inset:8px;border:1px solid rgba(49,91,75,.24);border-radius:50%}
+.studio-community-orbit:after{inset:17px}
+.studio-community-orbit i{position:absolute;width:5px;height:5px;border-radius:50%;background:#b96853;top:4px;left:25px}
+.studio-community-orbit i:nth-child(2){top:37px;left:5px;background:#65866f}
+.studio-community-orbit i:nth-child(3){top:37px;left:43px;background:#65866f}
+.creator-studio-bottom{border-top:1px solid rgba(255,255,255,.16);padding-top:15px;margin-top:17px;font-size:7px}
+@media(max-width:700px){
+ .apex-editorial .creator-studio-visual{min-height:465px;padding:19px}
+ .creator-studio-heading{margin:30px 0 20px}
+ .creator-studio-board{grid-template-columns:1fr 1fr;grid-template-rows:145px 125px}
+ .studio-tile-feature{grid-row:span 2}
+ .studio-tile strong{font-size:18px}
+ .creator-studio-bottom{font-size:6px;letter-spacing:.08em}
+}
+@media(prefers-reduced-motion:reduce){
+ .apex-editorial .creator-studio-visual,.apex-editorial .creator-studio-visual:before{animation:none!important}
+}
