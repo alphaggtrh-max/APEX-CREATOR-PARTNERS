@@ -23,31 +23,31 @@ const faqs = [
   ["Do I keep my account and earnings?", "Yes. Your creator accounts and payouts remain under your control. Any agreed service fees and responsibilities should be clear in writing before work begins."],
   ["Do you guarantee more subscribers or income?", "No. Growth depends on many factors and cannot be guaranteed. We focus on a clear plan, consistent execution and honest review."],
   ["What happens after I contact you?", "Send a short enquiry and we will review it and reply by email. If it looks like a possible fit, we arrange an introductory conversation."],
-  ["Who do you work with?", "APEX works with independent adult and subscription-based creators aged 18 or older. We do not work with anyone under 18."],
+  ["Who do you work with?", "APEX works with independent adult-content creators and subscription-based creators aged 18 or older. We do not work with anyone under 18."],
 ];
 
 export default function Home() {
   return <main id="top" className="apex-site apex-editorial">
     <ScrollMotion/>
-    <div className="apex-topline"><span>INDEPENDENT CREATOR MANAGEMENT</span><span>STRATEGY · GROWTH · OPERATIONS</span><span>18+ ONLY</span></div>
+    <div className="apex-topline"><span>ADULT CREATOR MANAGEMENT</span><span>STRATEGY · GROWTH · OPERATIONS</span><span>18+ ONLY</span></div>
     <SiteHeader/>
 
     <section className="apex-hero apex-editorial-hero">
       <div className="apex-hero-copy">
-        <div className="apex-eyebrow"><i/> AGENCY PARTNERSHIP FOR INDEPENDENT CREATORS</div>
-        <h1>Creator management.<br/><em>with a clearer game plan.</em></h1>
-        <p>The strategy, promotion and day-to-day management behind a stronger creator business. APEX connects the moving parts, so you can focus on creating with a clearer plan behind you.</p>
+        <div className="apex-eyebrow"><i/> MANAGEMENT FOR INDEPENDENT ADULT CONTENT CREATORS · 18+ ONLY</div>
+        <h1>Adult creator management.<br/><em>with a clearer game plan.</em></h1>
+        <p>APEX supports independent adult-content creators with strategy, promotion, fan management and day-to-day business operations across subscription platforms and social channels.</p>
         <div className="apex-hero-actions">
           <a className="apex-button apex-button-primary" href="/contact">Apply for management <span>↗</span></a>
           <a className="apex-text-link" href="#services">Explore what we do <span>↓</span></a>
         </div>
-        <div className="apex-hero-note"><span/> CREATOR-FIRST. DISCREET. BUILT AROUND YOU.</div>
+        <div className="apex-hero-note"><span/> ADULT CREATORS · 18+ ONLY · DISCREET BY DESIGN</div>
       </div>
       <AgencyConsole/>
       <div className="apex-hero-index">APEX <span>—</span> 01</div>
     </section>
 
-    <div className="apex-proofline"><span>CREATOR-FIRST</span><i>✳</i><span>18+ ONLY</span><i>✳</i><span>AGREED SCOPE & FEES</span><i>✳</i><span>YOUR ACCOUNTS STAY YOURS</span></div>
+    <div className="apex-proofline"><span>ADULT CREATOR FOCUS</span><i>✳</i><span>18+ ONLY</span><i>✳</i><span>AGREED SCOPE & FEES</span><i>✳</i><span>YOUR ACCOUNTS STAY YOURS</span></div>
 
     <div id="creator-pathway"><CreatorPathway/></div>
 
@@ -55,7 +55,7 @@ export default function Home() {
       <div className="apex-section-kicker">01 / THE APEX APPROACH</div>
       <div className="apex-intro-grid">
         <h2>Not just more content.<br/><em>A stronger business.</em></h2>
-        <div><p className="apex-lead">A creator business has many moving parts: your brand, content, audience, subscriptions and day-to-day operations.</p><p>APEX brings those pieces into one considered plan. We work with you to identify what matters now, set clear priorities and build a structure that supports your ambitions without taking control away from you.</p><a className="apex-inline-link" href="/contact">Get to know APEX <span>↗</span></a></div>
+        <div><p className="apex-lead">An adult creator business has many moving parts: your brand, content, audience, subscription platforms and day-to-day operations.</p><p>APEX brings those pieces into one considered plan. We work with you to identify what matters now, set clear priorities and build a structure that supports your ambitions without taking control away from you.</p><a className="apex-inline-link" href="/contact">Get to know APEX <span>↗</span></a></div>
       </div>
     </section>
 
@@ -82,6 +82,6 @@ export default function Home() {
 
     <section className="apex-closing"><div className="apex-closing-orb"/><div className="apex-section-kicker">06 / LET’S TALK</div><h2>Ready to take your<br/><em>next step?</em></h2><p>Tell us about your creator business and the support you are looking for. We will review your enquiry and discuss whether a partnership makes sense.</p><a className="apex-button apex-button-light" href="/contact">Apply for a partnership <span>↗</span></a><div className="apex-closing-foot"><span>APEX CREATOR PARTNERS</span><span>YOUR NEXT CHAPTER, BY DESIGN.</span></div></section>
 
-    <footer className="apex-footer"><div className="apex-footer-main"><a className="apex-footer-brand" href="/"><ApexLogo className="apex-footer-logo"/><b>APEX<span>.</span></b><small>CREATOR PARTNERS</small></a><p>Independent creators.<br/>A more intentional way forward.</p><nav><a href="#services">Services</a><a href="#system">How we work</a><a href="#about">Our approach</a><a href="#faq">FAQ</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/imprint">Imprint</a></nav><a className="apex-footer-email" href="mailto:hello@apex-creator-partners.com">hello@apex-creator-partners.com ↗</a></div><div className="apex-footer-bottom"><span>© 2026 APEX Creator Partners</span><span>18+ · Independent creator management</span><a href="#top">BACK TO TOP ↑</a></div></footer>
+    <footer className="apex-footer"><div className="apex-footer-main"><a className="apex-footer-brand" href="/"><ApexLogo className="apex-footer-logo"/><b>APEX<span>.</span></b><small>CREATOR PARTNERS</small></a><p>Independent adult creators.<br/>A more intentional way forward.</p><nav><a href="#services">Services</a><a href="#system">How we work</a><a href="#about">Our approach</a><a href="#faq">FAQ</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/imprint">Imprint</a></nav><a className="apex-footer-email" href="mailto:hello@apex-creator-partners.com">hello@apex-creator-partners.com ↗</a></div><div className="apex-footer-bottom"><span>© 2026 APEX Creator Partners</span><span>18+ · Adult creator management</span><a href="#top">BACK TO TOP ↑</a></div></footer>
   </main>;
 }
