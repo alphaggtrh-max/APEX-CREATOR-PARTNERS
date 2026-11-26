@@ -216,14 +216,14 @@ button,a{-webkit-tap-highlight-color:transparent}
 .apex-channel-strip{display:grid;grid-template-columns:.8fr 1.2fr;gap:8%;margin-top:65px;padding-top:40px;border-top:1px solid #dce2ec}
 .apex-channel-intro h3{margin:15px 0 10px;font-size:30px;line-height:1.1;letter-spacing:-.055em}
 .apex-channel-intro p{max-width:320px;color:#718096;font-size:10px;line-height:1.8}
-.apex-channel-list{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
-.apex-channel-item{display:flex;align-items:center;gap:9px;padding:11px;background:white;border:1px solid #e1e6ef;border-radius:5px}
-.apex-channel-logo svg{width:28px;height:28px;display:block}
+.apex-channel-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.apex-channel-item{display:flex;align-items:center;gap:10px;min-height:66px;padding:11px;background:white;border:1px solid #e1e6ef;border-radius:5px;transition:transform .2s,border-color .2s,box-shadow .2s}\n.apex-channel-item:hover{transform:translateY(-2px);border-color:#c2cefa;box-shadow:0 8px 22px rgba(22,39,68,.07)}
+.apex-channel-logo{flex:0 0 36px;width:36px;height:36px;display:grid;place-items:center}\n.apex-channel-logo svg{width:36px;height:36px;display:block}
 .apex-channel-item>span:nth-child(2){display:flex;flex-direction:column;gap:3px;min-width:0}
-.apex-channel-item b{font-size:10px}
-.apex-channel-item small{font-size:8px;color:#8793a6}
+.apex-channel-item b{font-size:11px;color:var(--ink)}
+.apex-channel-item small{font-size:8px;line-height:1.35;color:#8793a6}
 .apex-channel-item>i{margin-left:auto;color:var(--blue);font-style:normal}
-.apex-platform-disclaimer{margin:17px 0 0;text-align:right;color:#9aa4b3;font-size:8px}
+.apex-platform-disclaimer{margin:17px 0 0;text-align:right;color:#9aa4b3;font-size:8px;line-height:1.6}
 
 /* Services and contact sub-pages */
 .inner-page{min-height:100vh;background:var(--paper);color:var(--ink)}
@@ -380,7 +380,7 @@ button,a{-webkit-tap-highlight-color:transparent}
  .creator-pathway-layout{grid-template-columns:1fr}
  .creator-pathway-detail{padding:22px}
  .apex-channel-strip{grid-template-columns:1fr;gap:22px;margin-top:45px;padding-top:32px}
- .apex-channel-list{grid-template-columns:1fr 1fr}
+ .apex-channel-list{grid-template-columns:repeat(2,minmax(0,1fr))}
  .apex-platform-disclaimer{text-align:left}
  .services-hero,.contact-page-hero{padding:62px 5% 48px}
  .services-hero h1,.contact-page-hero h1{font-size:clamp(42px,10.5vw,60px)}
@@ -403,7 +403,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 }
 @media(max-width:420px){
  .apex-service-grid{grid-template-columns:1fr}
- .apex-channel-list{grid-template-columns:1fr}
+ .apex-channel-list{grid-template-columns:repeat(2,minmax(0,1fr))}
  .agency-console-top span:last-child{font-size:7px}
  .agency-console-panel-meta{font-size:6px}
  .agency-console-flow{gap:4px}
