@@ -6,10 +6,10 @@ type IconProps = SVGProps<SVGSVGElement> & { title?: string };
 export function ApexLogo({ title = "APEX", ...props }: IconProps) {
   return (
     <svg viewBox="0 0 120 120" role="img" aria-label={title} {...props}>
-      <path d="M60 9 111 108H87L60 56 33 108H9Z" fill="#315b4b" />
-      <path d="m60 39 25 48H73L60 65 47 87H35Z" fill="#f8f7f3" />
-      <path d="m37 82 23-17 23 17-7 8-16-12-16 12Z" fill="#c47b64" />
-      <circle cx="60" cy="10" r="4" fill="#c47b64" />
+      <path d="M60 9 111 108H87L60 56 33 108H9Z" fill="#385be8" />
+      <path d="m60 39 25 48H73L60 65 47 87H35Z" fill="#ffffff" />
+      <path d="m37 82 23-17 23 17-7 8-16-12-16 12Z" fill="#9eafff" />
+      <circle cx="60" cy="10" r="4" fill="#9eafff" />
     </svg>
   );
 }
