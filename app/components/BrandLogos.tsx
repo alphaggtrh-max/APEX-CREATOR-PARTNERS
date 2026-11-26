@@ -6,21 +6,10 @@ type IconProps = SVGProps<SVGSVGElement> & { title?: string };
 export function ApexLogo({ title = "APEX", ...props }: IconProps) {
   return (
     <svg viewBox="0 0 120 120" role="img" aria-label={title} {...props}>
-      <defs>
-        <linearGradient id="apex-g1" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#ff3d8b" />
-          <stop offset=".55" stopColor="#b44dff" />
-          <stop offset="1" stopColor="#ffb547" />
-        </linearGradient>
-        <linearGradient id="apex-g2" x1="0" y1="1" x2="0" y2="0">
-          <stop offset="0" stopColor="#ffffff" stopOpacity=".85" />
-          <stop offset="1" stopColor="#ffffff" />
-        </linearGradient>
-      </defs>
-      <path d="M60 10 108 106H84L60 56 36 106H12Z" fill="url(#apex-g1)" />
-      <path d="M60 34 92 98H80L60 58 40 98H28Z" fill="#0b0612" opacity=".55" />
-      <path d="M38 80 60 64 82 80 76 86 60 75 44 86Z" fill="url(#apex-g2)" />
-      <circle cx="60" cy="10" r="4.5" fill="#fff" />
+      <path d="M60 9 111 108H87L60 56 33 108H9Z" fill="#315b4b" />
+      <path d="m60 39 25 48H73L60 65 47 87H35Z" fill="#f8f7f3" />
+      <path d="m37 82 23-17 23 17-7 8-16-12-16 12Z" fill="#c47b64" />
+      <circle cx="60" cy="10" r="4" fill="#c47b64" />
     </svg>
   );
 }
