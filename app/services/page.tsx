@@ -4,7 +4,7 @@ import { ApexLogo } from "../components/BrandLogos";
 
 export const metadata: Metadata = {
   title: "Services | APEX Creator Partners",
-  description: "Understand how APEX can support your adult creator business, from getting started to building a more consistent operation.",
+  description: "Creator management for adult creators: strategy, promotion, content planning, fan experience and business operations.",
 };
 
 const items = [
@@ -26,18 +26,18 @@ const items = [
   },
   {
     number: "03",
-    title: "Make content work harder",
-    plain: "You want a content routine that feels manageable and supports your business.",
-    description: "We can help you plan content themes, review your offer and think through ways to build stronger subscriber relationships.",
-    examples: ["Content themes and planning", "Subscription offer review", "Retention and monetization ideas"],
+    title: "Content & fan management",
+    plain: "You want a consistent content rhythm and a thoughtful subscriber experience.",
+    description: "We support content planning and agreed fan-management activities, with clear boundaries and responsibilities defined together.",
+    examples: ["Content themes and planning", "Chatting and fan communication", "Subscriber experience and retention"],
     symbol: "♡",
   },
   {
     number: "04",
-    title: "Get the business organised",
-    plain: "The admin, planning and day-to-day tasks are taking too much of your time.",
-    description: "We work with you to make the operational side clearer, so you can see what needs attention and what can be simplified.",
-    examples: ["Workflow and process setup", "Regular performance check-ins", "Operational coordination"],
+    title: "Operations & analytics",
+    plain: "You want better visibility over performance and less friction behind the scenes.",
+    description: "We help organise the business side, coordinate agreed tasks and review performance data to inform next steps.",
+    examples: ["Admin and workflow support", "Performance and analytics reviews", "Operational coordination"],
     symbol: "⌘",
   },
 ];
@@ -48,14 +48,14 @@ export default function ServicesPage() {
       <SiteHeader/>
       <section className="services-hero">
         <div className="section-label"><span>HOW WE CAN HELP</span> / SERVICES</div>
-        <h1>Support that makes<br/><em>creator life clearer.</em></h1>
-        <p>Running a creator business can mean doing everything yourself. APEX offers practical support across growth, content and the work behind the scenes — shaped around where you are right now.</p>
+        <h1>Creator management,<br/><em>built around you.</em></h1>
+        <p>From profile growth and promotion to chatting, fan management and the work behind the scenes, APEX brings the moving parts of your creator business into one considered partnership.</p>
         <div className="services-hero-note"><span/> NO ONE-SIZE-FITS-ALL PACKAGES. WE START WITH YOUR GOALS.</div>
       </section>
       <section className="services-explainer">
         <div className="services-explainer-icon"><ApexLogo/></div>
-        <div><strong>You do not need to know exactly what you need.</strong><p>Choose the area that sounds familiar. We can talk through the details together and explain what support could realistically look like.</p></div>
-        <a href="/contact">Tell us about your goals <b>↗</b></a>
+        <div><strong>You do not need to know exactly what you need.</strong><p>Choose the area that sounds familiar. We can talk through the details together, agree the responsibilities and fees in advance, and explain what support could realistically look like.</p></div>
+        <a href="/contact">Apply for a partnership <b>↗</b></a>
       </section>
       <section className="service-detail-list">
         {items.map((item) => (
