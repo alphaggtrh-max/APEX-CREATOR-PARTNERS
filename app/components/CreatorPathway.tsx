@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FanslyLogo, InstagramLogo, OnlyFansLogo, RedditLogo, TikTokLogo, XLogo } from "./BrandLogos";
+import { FanslyLogo, FanvueLogo, InstagramLogo, LoyalFansLogo, ManyVidsLogo, OnlyFansLogo, RedditLogo, TikTokLogo, XLogo } from "./BrandLogos";
 
 const paths = [
   { id: "starting", label: "I’m just getting started", title: "Build the foundations first.", copy: "You have a creator idea or a new profile, but you are not sure what to focus on. We can help shape your positioning, choose realistic channels and create a clear first plan.", steps: ["Clarify your creator identity and boundaries", "Choose platforms that fit your audience", "Create a manageable content and promotion routine"], note: "For creators who want direction before doing more." },
@@ -10,12 +10,15 @@ const paths = [
 ];
 
 const channels = [
-  { name: "OnlyFans", role: "Subscription platform", Logo: OnlyFansLogo },
-  { name: "Instagram", role: "Brand discovery", Logo: InstagramLogo },
-  { name: "TikTok", role: "Short-form reach", Logo: TikTokLogo },
+  { name: "OnlyFans", role: "Adult subscription platform", Logo: OnlyFansLogo },
+  { name: "Fansly", role: "Adult subscription platform", Logo: FanslyLogo },
+  { name: "Fanvue", role: "Creator subscription platform", Logo: FanvueLogo },
+  { name: "ManyVids", role: "Creator content platform", Logo: ManyVidsLogo },
+  { name: "LoyalFans", role: "Creator subscription platform", Logo: LoyalFansLogo },
+  { name: "Instagram", role: "Social discovery", Logo: InstagramLogo },
+  { name: "TikTok", role: "Short-form discovery", Logo: TikTokLogo },
   { name: "X", role: "Promotion & community", Logo: XLogo },
   { name: "Reddit", role: "Niche communities", Logo: RedditLogo },
-  { name: "Fansly", role: "Subscription platform", Logo: FanslyLogo },
 ];
 
 export default function CreatorPathway() {
@@ -25,8 +28,8 @@ export default function CreatorPathway() {
   return (
     <section className="creator-pathway apex-pathway-editorial" aria-labelledby="creator-pathway-title">
       <div className="creator-pathway-heading">
-        <div><div className="apex-section-kicker">A PARTNERSHIP THAT MEETS YOU WHERE YOU ARE</div><h2 id="creator-pathway-title">Your stage.<br/><em>Your strategy.</em></h2></div>
-        <p>Whether you are building your first audience or refining an established business, the starting point should reflect where you are today.</p>
+        <div><div className="apex-section-kicker">FOR INDEPENDENT ADULT CONTENT CREATORS · 18+ ONLY</div><h2 id="creator-pathway-title">Your stage.<br/><em>Your strategy.</em></h2></div>
+        <p>Whether you are launching an adult creator profile or refining an established subscription business, the starting point should reflect where you are today.</p>
       </div>
       <div className="creator-pathway-layout">
         <div className="creator-pathway-picker" role="tablist" aria-label="Your creator stage">
@@ -41,10 +44,10 @@ export default function CreatorPathway() {
         </article>
       </div>
       <div className="apex-channel-strip">
-        <div className="apex-channel-intro"><span className="apex-section-kicker">THE CREATOR ECOSYSTEM</span><h3>Different platforms.<br/><em>One connected brand.</em></h3><p>We consider how discovery, community and subscription channels can support one another — without treating every platform the same.</p></div>
+        <div className="apex-channel-intro"><span className="apex-section-kicker">PLATFORMS & CHANNELS</span><h3>Adult creator platforms.<br/><em>One connected brand.</em></h3><p>From OnlyFans, Fansly and Fanvue to social discovery on Instagram, TikTok, X and Reddit, we help connect your subscription presence with the channels that bring audiences to it.</p></div>
         <div className="apex-channel-list">{channels.map(({name,role,Logo})=><div className="apex-channel-item" key={name}><span className="apex-channel-logo"><Logo/></span><span><b>{name}</b><small>{role}</small></span><i>↗</i></div>)}</div>
       </div>
-      <p className="apex-platform-disclaimer">Platform names and logos belong to their respective owners. APEX is independent and not affiliated with these platforms.</p>
+      <p className="apex-platform-disclaimer">Platform names and logos belong to their respective owners. APEX is an independent management agency and is not affiliated with or endorsed by these platforms. Platform availability and policies may vary.</p>
     </section>
   );
 }
