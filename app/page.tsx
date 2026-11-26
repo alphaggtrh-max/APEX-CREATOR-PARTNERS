@@ -35,8 +35,8 @@ export default function Home() {
     <section className="apex-hero apex-editorial-hero">
       <div className="apex-hero-copy">
         <div className="apex-eyebrow"><i/> AGENCY PARTNERSHIP FOR INDEPENDENT CREATORS</div>
-        <h1>Creator management.<br/><em>Built to move you forward.</em></h1>
-        <p>A management partner for independent adult creators. We connect strategy, audience growth, fan experience and business operations — so every part of your creator business has direction.</p>
+        <h1>Creator management.<br/><em>with a clearer game plan.</em></h1>
+        <p>The strategy, promotion and day-to-day management behind a stronger creator business. APEX connects the moving parts, so you can focus on creating with a clearer plan behind you.</p>
         <div className="apex-hero-actions">
           <a className="apex-button apex-button-primary" href="/contact">Apply for management <span>↗</span></a>
           <a className="apex-text-link" href="#services">Explore what we do <span>↓</span></a>
@@ -60,7 +60,7 @@ export default function Home() {
     </section>
 
     <section className="apex-services apex-section" id="services">
-      <div className="apex-section-head"><div><div className="apex-section-kicker">02 / WHAT WE DO</div><h2>Everything connected.<br/><em>Nothing left to guess.</em></h2></div><p>Four core disciplines, brought together in one management partnership. Start with the area that needs attention most.</p></div>
+      <div className="apex-section-head"><div><div className="apex-section-kicker">02 / WHAT WE DO</div><h2>Everything connected.<br/><em>Nothing left to guess.</em></h2></div><p>One joined-up management offer — from positioning and promotion to fan experience and the operational work behind the scenes.</p></div>
       <div className="apex-service-grid">{services.map(s=><article className="apex-service-card" key={s.n}><div className="apex-service-meta"><span>{s.n} / 04</span><span>{s.tag}</span></div><div className="apex-service-symbol">{s.n === "01" ? "↗" : s.n === "02" ? "◎" : s.n === "03" ? "✳" : "⌘"}</div><h3>{s.title}</h3><p>{s.copy}</p><ul>{s.points.map(p=><li key={p}>{p}</li>)}</ul><a href="/contact">Explore this service <span>↗</span></a></article>)}</div>
     </section>
 
