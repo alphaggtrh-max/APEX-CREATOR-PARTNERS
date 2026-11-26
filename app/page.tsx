@@ -1,5 +1,6 @@
 import SiteHeader from "./components/SiteHeader";
 import CreatorPathway from "./components/CreatorPathway";
+import AgencyConsole from "./components/AgencyConsole";
 import { ApexLogo } from "./components/BrandLogos";
 import ScrollMotion from "./components/ScrollMotion";
 
@@ -34,24 +35,15 @@ export default function Home() {
     <section className="apex-hero apex-editorial-hero">
       <div className="apex-hero-copy">
         <div className="apex-eyebrow"><i/> AGENCY PARTNERSHIP FOR INDEPENDENT CREATORS</div>
-        <h1>Your creator business.<br/><em>Managed with intention.</em></h1>
-        <p>A considered management partnership for adult creators — bringing strategy, promotion, content, fan experience and day-to-day operations together.</p>
+        <h1>Creator management.<br/><em>Built to move you forward.</em></h1>
+        <p>A management partner for independent adult creators. We connect strategy, audience growth, fan experience and business operations — so every part of your creator business has direction.</p>
         <div className="apex-hero-actions">
           <a className="apex-button apex-button-primary" href="/contact">Apply for management <span>↗</span></a>
           <a className="apex-text-link" href="#services">Explore what we do <span>↓</span></a>
         </div>
         <div className="apex-hero-note"><span/> CREATOR-FIRST. DISCREET. BUILT AROUND YOU.</div>
       </div>
-      <div className="apex-editorial-visual creator-studio-visual" aria-label="A visual preview of the APEX creator content studio approach">
-        <div className="creator-studio-top"><span><i/> APEX / CREATOR STUDIO</span><span>STRATEGY IN MOTION</span></div>
-        <div className="creator-studio-heading"><span>THE CREATOR ECOSYSTEM</span><strong>Make every<br/><em>piece connect.</em></strong><p>One clear direction across content, audience and community.</p></div>
-        <div className="creator-studio-board">
-          <div className="studio-tile studio-tile-feature"><span>01 / CONTENT</span><strong>CREATE<br/><em>with purpose.</em></strong><small>Ideas shaped around your voice.</small><b className="studio-play">▶</b></div>
-          <div className="studio-tile studio-tile-social"><span>02 / DISCOVERY</span><div className="studio-social-mark">↗</div><strong>Find your<br/>people.</strong><small>Reach · Relevance · Rhythm</small></div>
-          <div className="studio-tile studio-tile-community"><span>03 / COMMUNITY</span><div className="studio-community-orbit"><i/><i/><i/></div><strong>Build<br/>connection.</strong><small>Beyond the scroll.</small></div>
-        </div>
-        <div className="creator-studio-bottom"><span>CONTENT × GROWTH × OPERATIONS</span><span>18+ · CREATOR FIRST</span></div>
-      </div>
+      <AgencyConsole/>
       <div className="apex-hero-index">APEX <span>—</span> 01</div>
     </section>
 
@@ -68,7 +60,7 @@ export default function Home() {
     </section>
 
     <section className="apex-services apex-section" id="services">
-      <div className="apex-section-head"><div><div className="apex-section-kicker">02 / WHAT WE DO</div><h2>Built around the<br/><em>business behind you.</em></h2></div><p>From growth and promotion to fan experience and operations, support is agreed around your priorities — not a one-size-fits-all package.</p></div>
+      <div className="apex-section-head"><div><div className="apex-section-kicker">02 / WHAT WE DO</div><h2>Everything connected.<br/><em>Nothing left to guess.</em></h2></div><p>Four core disciplines, brought together in one management partnership. Start with the area that needs attention most.</p></div>
       <div className="apex-service-grid">{services.map(s=><article className="apex-service-card" key={s.n}><div className="apex-service-meta"><span>{s.n} / 04</span><span>{s.tag}</span></div><div className="apex-service-symbol">{s.n === "01" ? "↗" : s.n === "02" ? "◎" : s.n === "03" ? "✳" : "⌘"}</div><h3>{s.title}</h3><p>{s.copy}</p><ul>{s.points.map(p=><li key={p}>{p}</li>)}</ul><a href="/contact">Explore this service <span>↗</span></a></article>)}</div>
     </section>
 
