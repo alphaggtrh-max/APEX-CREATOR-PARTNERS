@@ -442,3 +442,32 @@ button,a{-webkit-tap-highlight-color:transparent}
  .apex-reveal{opacity:1!important;transform:none!important}
  .agency-console-panel{animation:none}
 }
+
+
+/* Interactive platform guide
+   Each logo is a real button: selected states are visible, keyboard accessible and
+   the detail panel updates in place. Keep transitions limited to colour, opacity and transform. */
+.apex-channel-content{min-width:0}
+.apex-channel-item{width:100%;font:inherit;text-align:left;cursor:pointer}
+.apex-channel-item:focus-visible{outline:3px solid #8fa4ff;outline-offset:3px}
+.apex-channel-item.is-selected{border-color:#9fb1ff;background:#f7f8ff;box-shadow:0 0 0 2px #385be810}
+.apex-channel-item.is-selected>i{font-size:17px;font-weight:600}
+.apex-channel-detail{min-height:190px;margin-top:12px;padding:20px 22px;background:#fff;border:1px solid #dfe5ef;border-radius:6px;transition:border-color .2s,background .2s}
+.apex-channel-detail.is-open{border-color:#c4cff8;animation:channel-detail-in .24s ease both}
+@keyframes channel-detail-in{from{opacity:.55;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.apex-channel-detail-top{display:flex;justify-content:space-between;gap:12px;color:#8a96a8;font:8px var(--mono);letter-spacing:.1em}
+.apex-channel-detail h4{margin:17px 0 7px;color:var(--ink);font-size:19px;letter-spacing:-.045em}
+.apex-channel-detail>p,.apex-channel-apex p{max-width:680px;margin:0;color:#718096;font-size:10px;line-height:1.8}
+.apex-channel-apex{margin-top:15px;padding-top:13px;border-top:1px solid var(--line)}
+.apex-channel-apex>b{display:block;margin-bottom:6px;color:var(--blue);font:8px var(--mono);letter-spacing:.1em}
+.apex-channel-empty{display:flex;align-items:flex-start;gap:17px}
+.apex-channel-empty>span{flex:0 0 auto;color:var(--blue);font:9px var(--mono);letter-spacing:.08em}
+.apex-channel-empty p{max-width:560px;margin:0;color:#718096;font-size:10px;line-height:1.8}
+.apex-channel-empty b{color:var(--ink)}
+@media(max-width:760px){
+ .apex-channel-detail{min-height:0;padding:17px}
+ .apex-channel-detail h4{font-size:17px}
+}
+@media(prefers-reduced-motion:reduce){
+ .apex-channel-detail.is-open{animation:none}
+}
