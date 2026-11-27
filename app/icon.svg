@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="apex" x1="10" y1="8" x2="54" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8EA5FF"/>
+      <stop offset="1" stop-color="#385BE8"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="#111C2E"/>
+  <path d="M11 47.5 27.4 15.8c1.9-3.7 7.3-3.7 9.2 0L53 47.5H41.2L32 28.8l-9.2 18.7H11Z" fill="url(#apex)"/>
+  <path d="M25.4 39.4h13.2l-3.7 7.4h-5.8l-3.7-7.4Z" fill="#F7F8FB"/>
+</svg>
